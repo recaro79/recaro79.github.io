@@ -98,7 +98,8 @@ img{max-width:100%;display:block}
 @media(max-width:760px){
   .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy)}
   .callbar a{flex:1;text-align:center;color:#fff;text-decoration:none;font-weight:700;padding:14px 0;font-size:15px}
-  .callbar a+a{border-left:1px solid rgba(255,255,255,.2);background:var(--gold);color:var(--navy)}
+  .callbar a+a{border-left:1px solid rgba(255,255,255,.2)}
+  .callbar a.t{background:var(--gold);color:var(--navy)}
   body{padding-bottom:52px}
 }
 
@@ -141,3 +142,8 @@ img{max-width:100%;display:block}
 .tags-line span{font-size:13px;background:var(--soft);color:var(--sub);padding:3px 10px;border-radius:14px}
 @media(max-width:600px){.art h1{font-size:25px}.art h2{font-size:19px}}
 @media print{.hd,.callbar,.ft,.cta .btns{display:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+.btn.kakao{background:#FEE500;color:#191919}
+.nav .kakao{background:#FEE500;color:#191919;padding:7px 14px;border-radius:6px}
+@media(max-width:760px){.nav .kakao{border-radius:0}}
+.callbar a.k{background:#FEE500;color:#191919}
