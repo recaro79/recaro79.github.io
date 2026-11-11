@@ -276,3 +276,29 @@ img{max-width:100%;display:block}
 @media(max-width:900px){.phero .ph-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.ph-lead{font-size:22px}.ph-h1{font-size:30px}.ph-card{margin-top:0}}
 .nav{align-items:center}
+
+/* ===== hero v3: landscape card with contacts ===== */
+.ph-right{position:relative;display:flex;align-items:center;justify-content:center;min-height:100%}
+.ph-circle{position:absolute;right:-10px;top:50%;transform:translateY(-58%);width:300px;opacity:.55}
+.ph-badge{z-index:2}
+.ph-card{position:relative;z-index:1;margin-top:0;max-width:520px;width:100%;flex-wrap:wrap;gap:18px 24px;padding:26px 28px;background:rgba(11,28,58,.94);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.ph-card img{width:112px;height:112px}
+.ph-card > div:not(.pc-contact){flex:1;min-width:200px}
+.pc-f{font-size:13px}
+.pc-contact{flex:0 0 100%;display:grid;grid-template-columns:1fr 1fr;gap:10px;border-top:1px solid rgba(201,169,97,.35);padding-top:18px}
+.pc-contact a{display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;border-radius:8px;padding:11px 10px;font-size:16px}
+.pc-tel{background:#c9a961;color:#0f2448}
+.pc-kakao{background:#FEE500;color:#191919}
+.pc-mail{grid-column:1/-1;color:#e3e9f3;font-weight:500!important;font-size:15px!important;padding:4px!important;justify-content:flex-start!important}
+@media(max-width:900px){.ph-circle{display:none}.ph-right{order:2}}
+@media(max-width:600px){.ph-card img{width:88px;height:88px}.pc-contact a{font-size:15px}}
+
+.ph-circle{display:none!important}
+.ph-right{padding-top:30px}
+.pc-badge{position:absolute;right:22px;top:-40px;width:84px;height:84px;border-radius:50%;background:#c9a961;color:#0f2448;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 4px #0f2448,0 0 0 5px #c9a961}
+.pc-badge small{font-size:11px;font-weight:700;letter-spacing:1px}
+.pc-badge b{font-size:26px;font-weight:900;line-height:1.1}
+.ph-card > div:not(.pc-contact):not(.pc-badge){flex:1;min-width:170px}
+@media(max-width:600px){.pc-badge{width:68px;height:68px;top:-30px;right:14px}.pc-badge b{font-size:21px}.pc-badge small{font-size:9.5px}.pc-name{font-size:28px;letter-spacing:4px}.ph-card{gap:14px 16px}}
+.ph-card > .pc-badge{flex:none!important;min-width:0!important}
+@media(max-width:600px){.ph-card > .pc-badge{width:68px}}
