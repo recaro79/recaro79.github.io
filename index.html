@@ -24,6 +24,7 @@
   <nav class="nav">
     <a href="#guide">세목별 안내</a>
     <a href="#field">업무분야</a>
+    <a href="#cardnews">카드뉴스</a>
     <a href="/column/">세무 칼럼</a>
     <a href="#contact">오시는 길</a>
     <a class="kakao" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카톡 상담</a>
@@ -110,7 +111,18 @@
   <ol class="rec-list"><li><b class="serif">01</b>부동산 매도 전 양도세 확인</li><li><b class="serif">02</b>1세대1주택 비과세 판단</li><li><b class="serif">03</b>자녀 증여 계획 수립</li><li><b class="serif">04</b>상속 개시 후 신고 준비</li><li><b class="serif">05</b>성실신고확인 대상 사업자</li><li><b class="serif">06</b>법인 설립·법인 전환 검토</li><li><b class="serif">07</b>세무서 해명·소명 요청</li><li><b class="serif">08</b>세무조사 사전통지 수령</li></ol>
 </div></section>
 
-<section class="sec" id="column"><div class="wrap">
+<section class="sec" id="cardnews"><div class="wrap">
+  <div class="ptitle"><span></span><h2 class="serif">카드뉴스</h2><span></span></div>
+  <p class="lead2 c">꼭 알아야 할 세금 정보를 한 장씩 넘겨 보세요.</p>
+  <div class="cn-head"><span class="cat">양도소득세</span><b>1세대1주택 비과세, 2년만 보유하면 될까요?</b><a href="/column/01-one-house-exemption.html">칼럼으로 자세히 보기 ›</a></div>
+  <div class="cn" data-cn>
+    <button class="cn-btn prev" aria-label="이전" onclick="cnMove(this,-1)">‹</button>
+    <div class="cn-track"><img src="/assets/cardnews/01/1.jpg" alt="1세대1주택 비과세, 2년만 보유하면 될까요? (표지)" loading="lazy"><img src="/assets/cardnews/01/2.jpg" alt="비과세 기본 요건 3가지" loading="lazy"><img src="/assets/cardnews/01/3.jpg" alt="조정대상지역이었다면 2년 거주까지 필요" loading="lazy"><img src="/assets/cardnews/01/4.jpg" alt="2년이 안 돼도 비과세되는 경우" loading="lazy"><img src="/assets/cardnews/01/5.jpg" alt="12억 원 초과 시 넘는 비율만큼 과세" loading="lazy"><img src="/assets/cardnews/01/6.jpg" alt="거주 여부에 따른 세금 차이 사례" loading="lazy"><img src="/assets/cardnews/01/7.jpg" alt="상담 안내" loading="lazy"></div>
+    <button class="cn-btn next" aria-label="다음" onclick="cnMove(this,1)">›</button>
+  </div>
+</div></section>
+
+<section class="sec soft" id="column"><div class="wrap">
   <div class="ptitle"><span></span><h2 class="serif">세무 칼럼</h2><span></span></div>
   <p class="lead2 c">고객분들이 실제로 많이 묻는 질문을 최신 법령 기준으로 풀어 드립니다.</p>
   <div class="col-list">
@@ -156,5 +168,8 @@
 </footer>
 
 <div class="callbar"><a class="k" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카톡 상담</a><a href="sms:01077414822">문자</a><a class="t" href="tel:01077414822">☎ 전화 상담</a></div>
+<script>
+function cnMove(b,d){var t=b.parentNode.querySelector('.cn-track');var w=t.querySelector('img').getBoundingClientRect().width+14;t.scrollBy({left:d*w,behavior:'smooth'});}
+</script>
 </body>
 </html>

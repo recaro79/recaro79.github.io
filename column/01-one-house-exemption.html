@@ -29,7 +29,8 @@
   </nav>
 </div></header>
 <article class="art">
-<div class="crumb"><a href="/">홈</a> › <a href="/column/">세무 칼럼</a> › 양도소득세</div>
+<div class="crumb"><a href="/">홈</a> › <a href="/#cardnews">카드뉴스</a>
+    <a href="/column/">세무 칼럼</a> › 양도소득세</div>
 <h1>1세대1주택 비과세, 2년만 보유하면 될까요?</h1>
 <div class="meta">양도소득세 · 2026-11-11 · 세무법인 인성 남기원 세무사</div>
 <p>안녕하세요. 세무법인 인성 남기원 세무사입니다.<br>
@@ -45,7 +46,12 @@
 <div class="small" style="margin-top:8px">(소득세법 제89조제1항제3호, 같은 법 시행령 제154조제1항 / 2026-11-11 현행 법령 기준)</div>
 </div>
 
-<div class="fig"><img src="/assets/img/col01-thumb.jpg" alt="1세대1주택 비과세, 2년만 보유하면 될까요?" loading="lazy"></div>
+<p class="small" style="margin-top:6px">👉 카드뉴스로 먼저 훑어보세요 (옆으로 넘겨 보세요)</p>
+<div class="cn" data-cn>
+    <button class="cn-btn prev" aria-label="이전" onclick="cnMove(this,-1)">‹</button>
+    <div class="cn-track"><img src="/assets/cardnews/01/1.jpg" alt="1세대1주택 비과세, 2년만 보유하면 될까요? (표지)" loading="lazy"><img src="/assets/cardnews/01/2.jpg" alt="비과세 기본 요건 3가지" loading="lazy"><img src="/assets/cardnews/01/3.jpg" alt="조정대상지역이었다면 2년 거주까지 필요" loading="lazy"><img src="/assets/cardnews/01/4.jpg" alt="2년이 안 돼도 비과세되는 경우" loading="lazy"><img src="/assets/cardnews/01/5.jpg" alt="12억 원 초과 시 넘는 비율만큼 과세" loading="lazy"><img src="/assets/cardnews/01/6.jpg" alt="거주 여부에 따른 세금 차이 사례" loading="lazy"><img src="/assets/cardnews/01/7.jpg" alt="상담 안내" loading="lazy"></div>
+    <button class="cn-btn next" aria-label="다음" onclick="cnMove(this,1)">›</button>
+  </div>
 
 <div class="quote">"10년 전에 산 아파트를 14억 원에 팔려고 합니다.<br>집이 한 채뿐이고 2년 넘게 가지고 있었으니 세금은 없는 거 맞죠?"</div>
 
@@ -172,5 +178,8 @@
 
 
 <div class="callbar"><a class="k" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카톡 상담</a><a href="sms:01077414822">문자</a><a class="t" href="tel:01077414822">☎ 전화 상담</a></div>
+<script>
+function cnMove(b,d){var t=b.parentNode.querySelector('.cn-track');var w=t.querySelector('img').getBoundingClientRect().width+14;t.scrollBy({left:d*w,behavior:'smooth'});}
+</script>
 </body>
 </html>

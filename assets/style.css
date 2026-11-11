@@ -229,3 +229,17 @@ img{max-width:100%;display:block}
 @media(max-width:760px){.pft-grid{grid-template-columns:1fr}.pft-mid,.pft-tel{border-left:0;padding-left:0}.pft-tel a{font-size:26px}}
 
 @media(max-width:600px){.sec .ptitle h2{font-size:22px;letter-spacing:3px}.ptitle{gap:12px}}
+
+/* card news carousel */
+.cn-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:16px}
+.cn-head .cat{font-size:13px;font-weight:800;color:#fff;background:var(--pnavy);padding:3px 10px}
+.cn-head b{font-size:18px;color:var(--pnavy)}
+.cn-head a{margin-left:auto;font-size:14.5px;color:#a27b4a;font-weight:700;text-decoration:none}
+.cn{position:relative;margin:16px 0}
+.cn-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.cn-track::-webkit-scrollbar{display:none}
+.cn-track img{flex:0 0 auto;min-width:0;max-width:none;width:calc((100% - 28px)/3);scroll-snap-align:start;border-radius:10px;box-shadow:0 2px 10px rgba(15,36,72,.12);aspect-ratio:4/5;object-fit:cover}
+.art .cn-track img{width:calc((100% - 14px)/2)}
+.cn-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:rgba(15,36,72,.85);color:#fff;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.cn-btn.prev{left:-18px}.cn-btn.next{right:-18px}
+@media(max-width:760px){.cn-track img,.art .cn-track img{width:84%}.cn-btn{display:none}.cn-head a{margin-left:0}}
