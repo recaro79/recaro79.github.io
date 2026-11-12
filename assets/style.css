@@ -357,3 +357,7 @@ img{max-width:100%;display:block}
 .pc-save{grid-column:1/-1;border:1px solid rgba(201,169,97,.7);color:#c9a961!important;background:transparent}
 @media(max-width:860px){.nw-top{grid-template-columns:1fr}}
 @media(max-width:600px){.nw{flex-direction:column;gap:6px;padding:18px}.nw-d{width:auto;display:flex;gap:8px;align-items:baseline}.tl-card,.sch{padding:20px 16px}.sch-list li{padding:12px}.sd{width:52px}.tl-next strong{font-size:26px}}
+
+.logo .mk{width:42px;height:42px;flex:none;display:block}
+@media(max-width:760px){.logo .mk{width:36px;height:36px}}
+.o .mk2{width:22px;height:22px;vertical-align:-5px;margin-right:6px}
