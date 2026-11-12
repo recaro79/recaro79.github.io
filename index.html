@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://recaro79.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20261111f">
+<link rel="stylesheet" href="/assets/style.css?v=20261112a">
 </head>
 <body>
 
@@ -23,6 +23,7 @@
   <button class="menu-btn" aria-label="메뉴" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
   <nav class="nav">
     <a href="#guide">세목별 안내</a>
+    <a href="#news">세법 개정</a>
     <a href="#field">업무분야</a>
     <a href="#cardnews">카드뉴스</a>
     <a href="/column/">세무 칼럼</a>
@@ -72,6 +73,7 @@
       <div class="pc-contact">
         <a class="pc-tel" href="tel:01077414822">☎ 010-7741-4822</a>
         <a class="pc-kakao" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카카오톡 상담</a>
+        <a class="pc-save" href="/contact.vcf" download="남기원세무사.vcf">📇 연락처 저장하기</a>
         <a class="pc-mail" href="mailto:recaro798@gmail.com">✉ recaro798@gmail.com</a>
       </div>
     </div>
@@ -91,6 +93,57 @@
     <a href="/guide/sangsok.html"><span>📋</span>상속세 안내<i>›</i></a>
   </div>
 </div></section>
+
+<section class="sec" id="news"><div class="wrap">
+  <div class="ptitle"><span></span><h2 class="serif">세법 개정 소식 · 신고 일정</h2><span></span></div>
+  <p class="lead2 c">시행 · 국회 심사 · 정부안 단계를 구분해 매주 갱신합니다. <b class="nw-chk">● 2026.11.12. 확인</b></p>
+  <div class="nw-top">
+<!-- TIMELINE:START -->
+    <div class="tl-card">
+      <h3 class="serif">2026년 세법개정안, 지금 어디까지 왔나</h3>
+      <p class="tl-sub">매주 월요일 갱신 · 최종 확인 2026.11.12.</p>
+      <ol class="tl">
+        <li class="done"><i>✓</i><b>정부 세제개편안 발표</b><em>2026.8.3.</em></li>
+        <li class="done"><i>✓</i><b>정부안 국무회의 의결 · 국회 제출</b><em>2026.9.1.</em></li>
+        <li class="now"><i>3</i><b>국회 조세소위 심사 <span>진행 중</span></b><em>2026.11.2.~</em></li>
+        <li><i>4</i><b>국회 본회의 의결</b><em>예정</em></li>
+        <li><i>5</i><b>개정 세법 시행</b><em>항목별 시행일</em></li>
+      </ol>
+      <div class="tl-next" id="tlNext"></div>
+    </div>
+<!-- TIMELINE:END -->
+    <div class="sch">
+      <h3 class="serif">다가오는 신고 일정</h3>
+      <p class="tl-sub">기한이 토·일·공휴일이면 다음 날이 기한입니다(국세기본법 제5조).</p>
+<!-- SCHEDULE:START -->
+      <ul class="sch-list" id="schList">
+        <li data-d="2026-11-30"><div class="sd"><b>11.30</b><small>월요일</small></div><div><h4>종합소득세 중간예납 납부 <span class="dd"></span></h4><p>개인사업자 · 고지된 중간예납세액 납부. 상반기 실적이 직전 연도 세액의 30%에 못 미치면 추계액으로 신고할 수 있습니다(소득세법 제65조).</p></div></li>
+        <li data-d="2026-12-10"><div class="sd"><b>12.10</b><small>목요일</small></div><div><h4>원천세 신고·납부 (11월분) <span class="dd"></span></h4><p>원천징수의무자 · 징수한 달의 다음 달 10일까지(소득세법 제128조).</p></div></li>
+        <li data-d="2026-12-15"><div class="sd"><b>12.15</b><small>화요일</small></div><div><h4>종합부동산세 납부 <span class="dd"></span></h4><p>주택·토지 보유자 · 12.1.~12.15. 고지세액 납부 또는 신고납부 선택(종합부동산세법 제16조).</p></div></li>
+        <li data-d="2027-01-11"><div class="sd"><b>1.11</b><small>월요일</small></div><div><h4>원천세 신고·납부 (12월분·반기납부) <span class="dd"></span></h4><p>기한인 1.10.이 일요일이라 1.11.까지입니다. 반기납부 승인자는 하반기분을 이때 납부합니다.</p></div></li>
+        <li data-d="2027-01-25"><div class="sd"><b>1.25</b><small>월요일</small></div><div><h4>부가가치세 2기 확정신고 <span class="dd"></span></h4><p>과세사업자 · 과세기간이 끝난 후 25일 이내 신고·납부(부가가치세법 제49조).</p></div></li>
+        <li data-d="2027-02-10"><div class="sd"><b>2.10</b><small>수요일</small></div><div><h4>사업장현황신고 <span class="dd"></span></h4><p>면세 개인사업자(병의원·학원 등) · 다음 연도 2월 10일까지(소득세법 제78조).</p></div></li>
+        <li data-d="2027-03-31"><div class="sd"><b>3.31</b><small>수요일</small></div><div><h4>법인세 신고 (12월 결산법인) <span class="dd"></span></h4><p>사업연도 종료일이 속하는 달의 말일부터 3개월, 성실신고확인 대상은 4개월(법인세법 제60조).</p></div></li>
+      </ul>
+<!-- SCHEDULE:END -->
+    </div>
+  </div>
+
+  <h3 class="serif nw-h">최신 세법 개정 소식</h3>
+  <div class="nw-list">
+<!-- NEWS:START -->
+    <article class="nw a"><div class="nw-d"><b>2026.11.2.</b><small>입법 동향</small></div><div><div class="nw-tag"><span class="t-a">국회 심사</span>적용: 국회 의결 후 확정</div><h4>국회 조세소위, 2026년 세법개정안 심사 시작</h4><p>국회 재정경제기획위원회 조세소위원회가 11월 2일부터 정부 세법개정안과 의원 발의안 심사에 들어갔습니다. 직장·돌봄 등으로 집에 살지 못한 1주택자의 거주요건 예외 범위, 종합부동산세 기본공제, 장기보유특별공제의 거주기간 중심 개편 등이 쟁점입니다. 세율·공제 요건은 심사 과정에서 달라질 수 있습니다.</p><div class="nw-src">대상: 1주택자·다주택자 | 출처: <a href="https://www.fnnews.com/news/202611020601109077" target="_blank" rel="noopener">파이낸셜뉴스(뉴시스) 2026.11.2.</a></div></div></article>
+    <article class="nw g"><div class="nw-d"><b>2026.10.1.</b><small>양도소득세</small></div><div><div class="nw-tag"><span class="t-g">시행</span>적용: 2026.8.4. 이후 취득 + 2026.10.1. 이후 양도</div><h4>조정대상지역 일시적 2주택, 처분기한 3년 → 2년</h4><p>종전 주택이 조정대상지역에 있는 상태에서 조정대상지역의 신규 주택을 취득하면, 종전 주택을 신규 주택 취득일부터 2년 안에 팔아야 비과세됩니다. 2026.8.3. 이전에 취득했거나 계약금을 지급한 사실이 확인되면 종전대로 3년입니다(소득세법 시행령 제155조제1항, 부칙 제2조).</p><div class="nw-src">대상: 갈아타기 1주택자 | 출처: <a href="https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=290841" target="_blank" rel="noopener">국가법령정보센터 「소득세법 시행령」 개정이유</a></div></div></article>
+    <article class="nw g"><div class="nw-d"><b>2026.10.1.</b><small>양도소득세</small></div><div><div class="nw-tag"><span class="t-g">시행</span>적용: 2026.12.31.까지 계약 체결분</div><h4>상생임대주택 특례, 올해 말까지 계약해야 적용</h4><p>직전 계약보다 임대료 인상률이 5% 이하인 상생임대차계약은 2026.12.31.까지 체결(계약금 수령 확인)해야 1세대1주택 거주요건 특례를 받을 수 있습니다. 양도기한은 임대기간 종료일부터 1년이 되는 날과 2029.12.31. 중 빠른 날입니다(2026.12.31. 이전 임대기간 종료 시 2027.12.31.까지)(소득세법 시행령 제155조의3).</p><div class="nw-src">대상: 임대 중인 1주택자 | 출처: <a href="https://www.taxnet.co.kr/contents/taxnetpost/post-detail?id=5153" target="_blank" rel="noopener">택스넷 2026.9.30.</a></div></div></article>
+    <article class="nw a"><div class="nw-d"><b>2026.10.1.</b><small>입법 동향</small></div><div><div class="nw-tag"><span class="t-a">국회 심사</span>적용: 국회 의결 후 확정</div><h4>줄어든 전자신고세액공제, 원상회복 법안 논의</h4><p>올해 2월 시행령 개정으로 절반이 된 전자신고세액공제를 '납세협력비용세액공제'로 바꾸고 종전 수준으로 되돌리는 조세특례제한법 개정안이 조세소위에서 논의됐습니다. 조세소위는 11월에 의결하기로 했습니다.</p><div class="nw-src">대상: 개인·법인사업자 | 출처: <a href="https://www.taxwatch.co.kr/article/tax/2026/10/08/0001" target="_blank" rel="noopener">택스워치 2026.10.8.</a></div></div></article>
+    <article class="nw b"><div class="nw-d"><b>2026.9.1.</b><small>세법개정안</small></div><div><div class="nw-tag"><span class="t-b">정부안</span>적용: 국회 의결 후 확정</div><h4>정부 세법개정안 확정 — 8월 발표안에서 일부 수정</h4><p>국무회의에서 정부안이 의결되었습니다. 종합부동산세 비거주 1주택 기본공제는 9억 원 인하안 대신 현행 12억 원을 유지하고, 세부담 상한 200% 인상안은 철회(현행 150% 유지)하는 등 8월 발표안과 달라진 부분이 있습니다.</p><div class="nw-src">대상: 주택 보유자 등 | 출처: <a href="https://www.taxnet.co.kr/contents/taxnetpost/post-detail?id=5008" target="_blank" rel="noopener">택스넷 2026.9.2.</a></div></div></article>
+    <article class="nw b"><div class="nw-d"><b>2026.8.3.</b><small>세법개정안</small></div><div><div class="nw-tag"><span class="t-b">정부안</span>적용: 국회 의결 후 확정</div><h4>2026년 세제개편안 발표 — 부동산 세제 '보유'에서 '거주'로</h4><p>거주 1주택 종합부동산세 기본공제를 12억 원에서 14억 원으로 올리고, 양도소득세 장기보유특별공제를 2028년부터 거주기간 중심으로 단계적으로 바꾸는 내용 등이 담겼습니다. 국회 심사에서 달라질 수 있습니다.</p><div class="nw-src">대상: 주택 보유자 | 출처: <a href="https://www.khan.co.kr/article/202608032138005" target="_blank" rel="noopener">경향신문 2026.8.3.</a></div></div></article>
+    <article class="nw g"><div class="nw-d"><b>2026.1.1.</b><small>법인세</small></div><div><div class="nw-tag"><span class="t-g">시행</span>적용: 2026.1.1. 이후 개시 사업연도</div><h4>법인세율 전 구간 1%p 인상 — 10 · 20 · 22 · 25%</h4><p>과세표준 2억 원 이하 10%, 200억 원 이하 20%, 3천억 원 이하 22%, 3천억 원 초과 25%입니다(법인세법 제55조). 12월 결산법인은 2026 사업연도가 첫 적용 연도이므로 연내 결산 전 점검이 필요합니다.</p><div class="nw-src">대상: 법인 | 출처: <a href="https://www.taxnet.co.kr/contents/taxnetpost/post-detail?id=4653" target="_blank" rel="noopener">택스넷 2026.7.27.</a></div></div></article>
+<!-- NEWS:END -->
+  </div>
+  <p class="small c" style="margin-top:14px">※ 정부안·국회 심사 단계 내용은 확정된 법률이 아니며, 국회 의결 과정에서 바뀔 수 있습니다.</p>
+</div></section>
+
 
 <section class="sec beige" id="field"><div class="wrap">
   <div class="ptitle"><span></span><h2 class="serif">주요 업무 분야</h2><span></span></div>
@@ -157,6 +210,8 @@
       <tr><th>전화·문자</th><td><a href="tel:01077414822">010-7741-4822</a></td></tr>
       <tr><th>카카오톡</th><td><a href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">세무법인 인성 남기원 세무사</a> (채널 1:1 상담)</td></tr>
       <tr><th>이메일</th><td><a href="mailto:recaro798@gmail.com">recaro798@gmail.com</a></td></tr>
+      <tr><th>팩스</th><td>051-861-9995</td></tr>
+      <tr><th>연락처 저장</th><td><a href="/contact.vcf" download="남기원세무사.vcf">📇 내 휴대폰에 연락처 저장하기</a> · <a href="/card/">디지털 명함 보기</a></td></tr>
       <tr><th>지도</th><td><a href="https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EB%8C%80%EB%A1%9C%20153" target="_blank" rel="noopener">네이버 지도</a> · <a href="https://map.kakao.com/?q=%EB%B6%80%EC%82%B0%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EB%8C%80%EB%A1%9C%20153" target="_blank" rel="noopener">카카오맵</a></td></tr>
     </table>
     <div class="note">
@@ -180,6 +235,13 @@
 <div class="callbar"><a class="k" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카톡 상담</a><a href="sms:01077414822">문자</a><a class="t" href="tel:01077414822">☎ 전화 상담</a></div>
 <script>
 function cnMove(b,d){var t=b.parentNode.querySelector('.cn-track');var w=t.querySelector('img').getBoundingClientRect().width+14;t.scrollBy({left:d*w,behavior:'smooth'});}
+</script>
+<script>
+(function(){var l=document.getElementById('schList');if(!l)return;var t=new Date();t.setHours(0,0,0,0);var first=null;
+[].forEach.call(l.querySelectorAll('li'),function(li){var p=li.getAttribute('data-d').split('-');var d=new Date(+p[0],p[1]-1,+p[2]);var n=Math.round((d-t)/864e5);
+if(n<0){li.className='past';return;}li.querySelector('.dd').textContent=n===0?'D-day':'D-'+n;if(!first){first=li;li.className='first';}});
+var nx=document.getElementById('tlNext');if(first&&nx){var h=first.querySelector('h4').cloneNode(true);h.removeChild(h.querySelector('.dd'));
+nx.innerHTML='<strong>'+first.querySelector('.dd').textContent+'</strong><div><b>'+h.textContent.trim()+'</b><small>'+first.querySelector('.sd b').textContent+' '+first.querySelector('.sd small').textContent+' · '+first.querySelector('p').textContent.split(' · ')[0].split('(')[0]+'</small></div>';}})();
 </script>
 </body>
 </html>
