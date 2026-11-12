@@ -366,3 +366,10 @@ img{max-width:100%;display:block}
 .pc-qr img{width:76px;height:76px;flex:none;border-radius:6px;background:#fff}
 .pc-qr span{font-size:13px;font-weight:400;color:#d6deeb;line-height:1.55}
 .pc-qr b{display:block;font-size:15px;color:#c9a961;font-weight:800;margin-bottom:2px}
+
+/* 고급 명조(나눔명조) — 법인명·이름 (2026-11-12) */
+.nm,.logo .lt b,.pft-firm,.ph-firm{font-family:"Nanum Myeongjo","Noto Serif KR",serif!important}
+.logo .lt b{font-weight:800;letter-spacing:3px}
+.pc-name.nm{font-weight:800;letter-spacing:8px}
+.pc-name.nm::after{content:"";display:block;width:36px;height:2px;background:#c9a961;margin-top:8px}
+.pft-firm{font-weight:800}

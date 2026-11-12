@@ -17,6 +17,7 @@
 - 홈페이지: `index.html`, `column/*.html`, `column/index.html`, `card/index.html`, `contact.vcf`
 - 세목별 안내문: 저장소 `recaro79/guide` (7개, 맨 아래에 디지털 명함 QR `/assets/img/card-qr.png` → /card/)
 - 명함: `card/index.html`, `contact.vcf`, QR 명함 이미지 `card/qr-card.png`(공유용 페이지 `card/qr/`) — 연락처·직함·업무 문구가 바뀌면 `_ops/qrcard/card.html` 문구를 고치고 `python3 _ops/qrcard/build.py` 실행
+- 글씨체: 법인명·이름은 나눔명조 800(웹: Google Fonts "Nanum Myeongjo", 이미지 제작: `_ops/fonts/NanumMyeongjo-800.woff2`).
 - CSS를 바꾸면 모든 페이지의 `/assets/style.css?v=` 값을 새로 올립니다.
 
 ## 2. 칼럼 + 카드뉴스 게시 절차
