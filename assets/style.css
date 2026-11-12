@@ -361,3 +361,8 @@ img{max-width:100%;display:block}
 .logo .mk{width:42px;height:42px;flex:none;display:block}
 @media(max-width:760px){.logo .mk{width:36px;height:36px}}
 .o .mk2{width:22px;height:22px;vertical-align:-5px;margin-right:6px}
+
+.pc-contact a.pc-qr{grid-column:1/-1;display:flex;align-items:center;justify-content:flex-start;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,169,97,.45);padding:10px 12px;text-align:left}
+.pc-qr img{width:76px;height:76px;flex:none;border-radius:6px;background:#fff}
+.pc-qr span{font-size:13px;font-weight:400;color:#d6deeb;line-height:1.55}
+.pc-qr b{display:block;font-size:15px;color:#c9a961;font-weight:800;margin-bottom:2px}
