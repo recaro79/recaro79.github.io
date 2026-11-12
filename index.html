@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://recaro79.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@600;700;900&family=Nanum+Myeongjo:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20261112d">
+<link rel="stylesheet" href="/assets/style.css?v=20261112e">
 </head>
 <body>
 
@@ -168,13 +168,9 @@
 
 <section class="sec" id="cardnews"><div class="wrap">
   <div class="ptitle"><span></span><h2 class="serif">카드뉴스</h2><span></span></div>
-  <p class="lead2 c">꼭 알아야 할 세금 정보를 한 장씩 넘겨 보세요.</p>
-  <div class="cn-head"><span class="cat">양도소득세</span><b>1세대1주택 비과세, 2년만 보유하면 될까요?</b><a href="/column/01-one-house-exemption.html">칼럼으로 자세히 보기 ›</a></div>
-  <div class="cn" data-cn>
-    <button class="cn-btn prev" aria-label="이전" onclick="cnMove(this,-1)">‹</button>
-    <div class="cn-track"><img src="/assets/cardnews/01/1.jpg" alt="1세대1주택 비과세, 2년만 보유하면 될까요? (표지)" loading="lazy"><img src="/assets/cardnews/01/2.jpg" alt="비과세 기본 요건 3가지" loading="lazy"><img src="/assets/cardnews/01/3.jpg" alt="조정대상지역이었다면 2년 거주까지 필요" loading="lazy"><img src="/assets/cardnews/01/4.jpg" alt="2년이 안 돼도 비과세되는 경우" loading="lazy"><img src="/assets/cardnews/01/5.jpg" alt="12억 원 초과 시 넘는 비율만큼 과세" loading="lazy"><img src="/assets/cardnews/01/6.jpg" alt="거주 여부에 따른 세금 차이 사례" loading="lazy"><img src="/assets/cardnews/01/7.jpg" alt="상담 안내" loading="lazy"></div>
-    <button class="cn-btn next" aria-label="다음" onclick="cnMove(this,1)">›</button>
-  </div>
+  <p class="lead2 c">궁금한 주제를 눌러 보세요. 한 장씩 넘겨 보는 7장짜리 요약과 자세한 칼럼이 함께 있습니다.</p>
+  <div class="cg" id="cnGallery"></div>
+  <p class="cg-more"><a href="/column/">전체 칼럼·카드뉴스 보기 ›</a></p>
 </div></section>
 
 <section class="sec soft" id="column"><div class="wrap">
@@ -247,5 +243,6 @@ if(n<0){li.className='past';return;}li.querySelector('.dd').textContent=n===0?'D
 var nx=document.getElementById('tlNext');if(first&&nx){var h=first.querySelector('h4').cloneNode(true);h.removeChild(h.querySelector('.dd'));
 nx.innerHTML='<strong>'+first.querySelector('.dd').textContent+'</strong><div><b>'+h.textContent.trim()+'</b><small>'+first.querySelector('.sd b').textContent+' '+first.querySelector('.sd small').textContent+' · '+first.querySelector('p').textContent.split(' · ')[0].split('(')[0]+'</small></div>';}})();
 </script>
+<script src="/assets/cn.js?v=1" defer></script>
 </body>
 </html>

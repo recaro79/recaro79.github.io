@@ -373,3 +373,31 @@ img{max-width:100%;display:block}
 .pc-name.nm{font-weight:800;letter-spacing:8px}
 .pc-name.nm::after{content:"";display:block;width:36px;height:2px;background:#c9a961;margin-top:8px}
 .pft-firm{font-weight:800}
+
+/* ===== 모바일 보완: 카드뉴스 갤러리·넘김 표시·메뉴 이동 (2026-11-12) ===== */
+
+section[id]{scroll-margin-top:78px}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:22px}
+.cg-item{text-decoration:none;color:inherit;display:block}
+.cg-img{display:block;position:relative;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(15,36,72,.14)}
+.cg-img img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.cg-img em{position:absolute;right:8px;bottom:8px;font-style:normal;font-size:12px;font-weight:700;background:rgba(15,36,72,.88);color:#e9d39c;padding:4px 9px;border-radius:20px}
+.cg-cat{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:#a27b4a}
+.cg-item b{display:block;font-size:15.5px;color:#0f2448;line-height:1.45;margin-top:2px}
+.cg-more{text-align:center;margin-top:22px}
+.cg-more a{display:inline-block;border:1px solid #0f2448;color:#0f2448;font-weight:700;text-decoration:none;padding:10px 22px;border-radius:30px}
+.cn-ui{display:flex;align-items:center;justify-content:center;gap:14px;margin:4px 0 8px;font-size:13.5px;color:#55606f}
+.cn-cnt b{color:#0f2448;font-size:15px}
+.cn-dots{display:flex;gap:6px}
+.cn-dots i{width:7px;height:7px;border-radius:50%;background:#cfd6e2;cursor:pointer}
+.cn-dots i.on{background:#c9a961;width:18px;border-radius:4px}
+.cn-hint{color:#a27b4a;font-weight:700}
+.cn.at-start .cn-btn.prev,.cn.at-end .cn-btn.next{opacity:.25;pointer-events:none}
+@media(max-width:760px){
+  .cg{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:64%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+  .cg::-webkit-scrollbar{display:none}
+  .cg-item{scroll-snap-align:start}
+  .cn-btn{display:flex!important;align-items:center;justify-content:center;width:36px;height:36px;font-size:22px}
+  .cn-btn.prev{left:4px}.cn-btn.next{right:4px}
+  .cn-hint{display:none}
+}

@@ -30,7 +30,8 @@
    `python3 _ops/cardnews/render.py <html절대경로> <출력접두어>` → PNG 7장 → JPG(quality 86)로 `assets/cardnews/NN/1~7.jpg`.
    썸네일 `assets/img/colNN-thumb.jpg`(720×720, 1번 카드 상단 정사각 크롭).
    렌더 전에 template 폴더의 profile.jpg, qr.png가 HTML과 같은 폴더에 있어야 합니다.
-5. `index.html`과 `column/index.html`의 `<!-- COLUMNS:START -->` 바로 아래에 카드 추가.
+5. (홈 카드뉴스 갤러리는 칼럼 목록에서 `/assets/cn.js`가 자동으로 만듭니다. 새 칼럼 HTML은 최신 칼럼을 복사하므로 `cn.js` 스크립트 줄이 들어 있는지 확인)
+   `index.html`과 `column/index.html`의 `<!-- COLUMNS:START -->` 바로 아래에 카드 추가.
 6. `sitemap.xml`에 URL 추가.
 7. 모바일(390px) 화면에서 가로 넘침이 없는지 Playwright로 확인.
 8. 커밋·푸시 후 `_ops/log.md`에 기록.
