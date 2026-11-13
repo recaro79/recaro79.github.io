@@ -14,7 +14,7 @@
 
 ## 1. 수정 규칙 (일괄 수정)
 무언가를 고치면 관련된 모든 파일을 같이 고칩니다.
-- 홈페이지: `index.html`, `column/*.html`, `column/index.html`, `card/index.html`, `contact.vcf`
+- 홈페이지: `index.html`, `column/*.html`, `column/index.html`, `press/index.html`(정부 보도자료), `card/index.html`, `contact.vcf`
 - 세목별 안내문: 저장소 `recaro79/guide` (7개, 맨 아래에 디지털 명함 QR `/assets/img/card-qr.png` → /card/)
 - 명함: `card/index.html`, `contact.vcf`, QR 명함 이미지 `card/qr-card.png`(공유용 페이지 `card/qr/`) — 연락처·직함·업무 문구가 바뀌면 `_ops/qrcard/card.html` 문구를 고치고 `python3 _ops/qrcard/build.py` 실행
 - 글씨체: 법인명·이름은 나눔명조 800(웹: Google Fonts "Nanum Myeongjo", 이미지 제작: `_ops/fonts/NanumMyeongjo-800.woff2`).
@@ -43,6 +43,12 @@
 - `<!-- SCHEDULE:START -->`~`END`: 지난 일정은 자동으로 숨겨지지만, 앞으로 3~4개월 일정이 늘 5개 이상 있도록 추가. 요일은 python으로 계산, 기한이 토·일·공휴일이면 다음 날(국세기본법 제5조).
 - 섹션 머리의 "● YYYY.MM.DD. 확인" 날짜 갱신.
 - 개정세법 칼럼 1편(+카드뉴스) 작성: 가장 영향이 큰 개정 사항을 고객 눈높이로 설명.
+
+- **정부 보도자료 정리(월요일 작업에 포함)**: 지난 일주일 동안 나온 **재정경제부(옛 기획재정부) 세제실의 세법 관련 보도자료**(국세청 등 세무 관련 부처 자료 포함)를 확인해 `press/index.html`의 `<!-- PRESS:START -->` 바로 아래에 최신순으로 추가합니다.
+  - 원문(부처 누리집·정책브리핑 korea.kr)이나 실제 기사로 확인된 것만 싣고, 출처 링크를 답니다. 정부안·국회 심사 단계는 "확정 아님"을 표시합니다.
+  - 형식: `<article class="nw b" id="pYYYYMMDD-부처">` 날짜·부처 → 제목 → 쉬운 요약(3~5줄 목록) → "세무사가 드리는 사장님 체크포인트" 표(조문은 법제처로 확인) → 출처.
+  - 같은 보도자료를 중복해 싣지 않습니다. 홈 화면 `#news` 아래 "정부 보도자료 쉽게 읽기" 버튼의 "(최신: …)" 문구를 가장 최근 항목으로 바꿉니다. `sitemap.xml`의 /press/ lastmod도 갱신합니다.
+  - 사용자가 보도자료 파일(hwpx·pdf)을 주면 같은 형식으로 정리해 올립니다.
 
 ## 4. 커밋
 - 작성자: recaro79 <recaro798@gmail.com>

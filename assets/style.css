@@ -16,7 +16,7 @@ img{max-width:100%;display:block}
 .logo small{font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:700}
 .logo b{font-size:19px;color:var(--navy);font-weight:900}
 .nav{display:flex;gap:22px;font-size:15px;font-weight:600}
-.nav a{text-decoration:none;color:var(--sub)}
+.nav a{text-decoration:none;color:var(--sub);white-space:nowrap}
 .nav a:hover,.nav a.on{color:var(--navy)}
 .nav .call{background:var(--navy);color:#fff;padding:7px 14px;border-radius:6px}
 .menu-btn{display:none;background:none;border:0;font-size:26px;color:var(--navy);cursor:pointer}
@@ -401,3 +401,6 @@ section[id]{scroll-margin-top:78px}
   .cn-btn.prev{left:4px}.cn-btn.next{right:4px}
   .cn-hint{display:none}
 }
+
+@media(min-width:761px) and (max-width:1320px){.nav{gap:14px;font-size:14px;align-items:center}.nav .call,.nav .kakao{padding:7px 10px}}
+@media(min-width:761px) and (max-width:1000px){.nav{gap:9px;font-size:13px}.nav .call,.nav .kakao{padding:6px 8px}.logo .lt small{display:none}.logo .lt b{white-space:nowrap;font-size:20px}}
