@@ -512,3 +512,31 @@ body .cta{background:#faf8f3;color:#1a2233;border:1px solid #e6dfcf;border-left:
 body .cta b{color:#a27b3a}
 body .ft{background:#f3f1ec;color:#3a4456}
 body .btn.line{border:1.5px solid #0f2448;color:#0f2448;background:#fff}
+
+/* ===== 첫 화면: 따뜻한 아이보리 + 명조 스타일 (2026-11-13) ===== */
+body .phero{background:linear-gradient(180deg,#fdfaf4 0%,#f5ecdb 100%);position:relative;overflow:hidden;border-bottom:0}
+body .phero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;border:1.5px solid rgba(201,169,97,.35);right:-180px;top:-260px;pointer-events:none}
+body .phero::after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;border:1px solid rgba(201,169,97,.22);left:-160px;bottom:-200px;pointer-events:none}
+body .phero .ph-grid{position:relative;z-index:1}
+body .ph-firm{display:flex;align-items:center;gap:10px;font-size:26px;letter-spacing:4px;color:#a27b3a}
+body .ph-mk{width:34px;height:34px;flex:none}
+body .ph-sub{letter-spacing:3px;color:#7a8496;font-size:13.5px;margin-top:8px}
+body .ph-lead{font-family:"Nanum Myeongjo",serif;font-weight:400;color:#0f2448;font-size:30px;line-height:1.5;margin-top:26px}
+body .ph-rule{width:44px;height:2px;background:#c9a961;margin:22px 0}
+body .ph-h1{font-family:"Nanum Myeongjo",serif;font-weight:800;color:#0f2448;font-size:42px;line-height:1.45;letter-spacing:0}
+body .ph-h1 em{font-style:normal;color:#a27b3a}
+body .ph-desc{color:#55606f}
+body .ph-feat{background:#fff;border:1px solid #eee3cd;border-radius:18px;padding:18px 8px;box-shadow:0 6px 20px rgba(162,123,58,.08);max-width:520px}
+body .ph-feat div{border-left-color:#eee3cd;color:#a27b3a}
+body .ph-feat span{color:#1a2233;font-size:14px}
+body .pc-badge,body .ph-badge{background:linear-gradient(145deg,#ecd29a 0%,#c9a961 55%,#a8823f 100%);color:#0f2448;box-shadow:0 0 0 4px #fff,0 6px 18px rgba(162,123,58,.35)}
+body .ph-card{border-radius:16px;border-top:1px solid #e6dfcf}
+@media(max-width:600px){
+  body .phero::before{width:420px;height:420px;right:-200px;top:-180px}
+  body .ph-firm{font-size:21px;letter-spacing:3px}
+  body .ph-mk{width:28px;height:28px}
+  body .ph-lead{font-size:24px;margin-top:20px}
+  body .ph-h1{font-size:28px}
+  body .ph-feat{border-radius:16px;padding:14px 4px}
+}
+@media(max-width:600px){body .ph-feat span{font-size:12.5px}}
