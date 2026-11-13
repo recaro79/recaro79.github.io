@@ -468,3 +468,47 @@ section[id]{scroll-margin-top:78px}
 }
 @media(max-width:1439px){#column .col-list>.col-card:nth-of-type(n+7){display:none}}
 @media(min-width:561px) and (max-width:900px){#column .col-list>.col-card:nth-of-type(n+7){display:none}}
+
+/* ===== 밝은 배경으로 전환 — 남색 배경 제거 (2026-11-13) ===== */
+body .hd{background:rgba(255,255,255,.97);border-bottom:1px solid #e6dfcf}
+body .logo .lt b{color:#0f2448}
+body .logo .lt small{color:#a27b3a}
+body .nav a{color:#3a4456}
+body .nav a:hover,body .nav a.on{color:#0f2448}
+body .menu-btn{color:#0f2448}
+@media(max-width:760px){body .nav{background:#fff;box-shadow:0 8px 20px rgba(15,36,72,.08)}body .nav a{border-top:1px solid #eee}}
+body .phero{background:#faf8f3;color:#1a2233;border-bottom:3px solid #c9a961}
+body .ph-firm{color:#a27b3a}
+body .ph-sub{color:#55606f}
+body .ph-lead{color:#0f2448}
+body .ph-h1{color:#0f2448}
+body .ph-desc{color:#3a4456}
+body .ph-feat div{color:#a27b3a;border-left-color:#e2d8c3}
+body .ph-feat span{color:#3a4456}
+body .ph-circle{background:#efe9dc;box-shadow:0 0 0 14px #f5f0e6,0 0 0 15px rgba(201,169,97,.5)}
+body .ph-card{background:#fff;border:1px solid #e6dfcf;border-top:3px solid #c9a961;box-shadow:0 12px 32px rgba(15,36,72,.08)}
+body .pc-role{color:#a27b3a}
+body .pc-name{color:#0f2448}
+body .pc-firm{color:#3a4456}
+body .pc-f{color:#55606f}
+body .pc-contact{border-top-color:#eee5d3}
+body .pc-mail{color:#0f2448}
+body .pc-contact a.pc-qr{background:#faf8f3;border-color:#e6dfcf}
+body .pc-qr span{color:#55606f}
+body .pc-qr b{color:#a27b3a}
+body .rec-box{background:#faf8f3;color:#1a2233;border:1px solid #e6dfcf}
+body .sec .rec-box h2{color:#0f2448}
+body .rec-box span{color:#3a4456;border-color:#c9a961}
+body .pft{background:#f3f1ec;color:#1a2233;border-top:3px solid #c9a961}
+body .pft-firm{color:#0f2448}
+body .pft-s{color:#55606f}
+body .pft-mid{color:#3a4456;border-left-color:#e2d8c3}
+body .pft-tel{border-left-color:#e2d8c3}
+body .pft-tel a{color:#0f2448}
+body .pft-tel small{color:#55606f}
+body .pft .disc{color:#7a8496;border-top-color:#e2ddd2}
+body .pft a{color:#0f2448}
+body .cta{background:#faf8f3;color:#1a2233;border:1px solid #e6dfcf;border-left:4px solid #c9a961}
+body .cta b{color:#a27b3a}
+body .ft{background:#f3f1ec;color:#3a4456}
+body .btn.line{border:1.5px solid #0f2448;color:#0f2448;background:#fff}
