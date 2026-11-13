@@ -540,3 +540,19 @@ body .ph-card{border-radius:16px;border-top:1px solid #e6dfcf}
   body .ph-feat{border-radius:16px;padding:14px 4px}
 }
 @media(max-width:600px){body .ph-feat span{font-size:12.5px}}
+
+/* 반원(원형 장식선) 제거 (2026-11-13) */
+body .phero::before,body .phero::after{display:none!important}
+
+/* 칼럼 검색 (2026-11-13) */
+.csearch{display:flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #c9a961;border-radius:999px;padding:6px 8px 6px 16px;margin:6px 0 14px;box-shadow:0 2px 10px rgba(15,36,72,.06)}
+.csearch.home{max-width:620px;margin:4px auto 22px}
+.csearch .ic{font-size:16px;flex:none}
+.csearch input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:15.5px;color:#0f2448;padding:8px 0}
+.csearch input::-webkit-search-cancel-button{display:none}
+.csearch .x{flex:none;border:0;background:#f1ece2;color:#6b7280;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:13px}
+.csearch .go{flex:none;border:0;background:linear-gradient(180deg,#d9b871,#a27b3a);color:#fff;font-weight:800;font-family:inherit;font-size:15px;padding:9px 18px;border-radius:999px;cursor:pointer}
+.csearch-info{margin:-4px 2px 12px;font-size:14.5px;color:#3a4456}
+.csearch-info:empty{display:none}
+.csearch-info b{color:#0f2448}
+@media(max-width:600px){.csearch input{font-size:16px}.csearch .go{padding:9px 14px}}

@@ -18,4 +18,4 @@ h1{font-size:46px;font-weight:900;line-height:1.25;margin-top:26px}
 .l{height:2px;background:rgba(162,123,58,.45);margin-top:22px}
 .s{font-size:22px;color:#3a4456;margin-top:18px}'''
 for f,t,s in G:
-  open(f'g_{f}.html','w').write(f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="bar"></div><div class="c"></div><div class="w"><div class="o"><img src="kacta-mark.png">세무법인 인성</div><h1>{t}</h1><div class="l"></div><div class="s">{s}</div></div></body></html>')
+  open(f'g_{f}.html','w').write(f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="bar"></div><div class="w"><div class="o"><img src="kacta-mark.png">세무법인 인성</div><h1>{t}</h1><div class="l"></div><div class="s">{s}</div></div></body></html>')

@@ -50,7 +50,19 @@
   if(cl){
     var cards=[].slice.call(cl.querySelectorAll('.col-card'));var page=+(cl.getAttribute('data-filter')||12);
     var tabs=[['전체',''],['양도소득세','양도'],['상속세','상속'],['증여세','증여'],['종합소득세','종합소득'],['법인세','법인'],['부가가치세·기타','부가|취득']];
-    var cur='',shown=page;
+    var cur='',shown=page,q='',idx=null,loading=false;
+    /* 검색창: 제목·세목은 바로, 본문은 /assets/search.json 색인으로 찾음 */
+    var sb=document.createElement('div');sb.className='csearch';
+    sb.innerHTML='<span class="ic">🔍</span><input type="search" placeholder="검색어 입력 (예: 증여공제, 1주택)" aria-label="칼럼 검색"><button type="button" class="x" aria-label="지우기">✕</button>';
+    cl.parentNode.insertBefore(sb,cl);
+    var inp=sb.querySelector('input'),xb=sb.querySelector('.x');
+    var info=document.createElement('p');info.className='csearch-info';cl.parentNode.insertBefore(info,cl);
+    function norm(s){return (s||'').toLowerCase().replace(/[\s·・,.()"'“”‘’\-—~]/g,'');}
+    function words(){return q.split(/\s+/).map(norm).filter(Boolean);}
+    function loadIdx(){if(idx||loading||!window.fetch)return;loading=true;fetch('/assets/search.json').then(function(r){return r.json();}).then(function(j){idx={};j.forEach(function(o){idx[o.u]=norm(o.t+' '+o.d+' '+o.x);});render();}).catch(function(){});}
+    function hit(x){var w=words();if(!w.length)return true;var h=x.getAttribute('href')||'';var txt=norm(x.textContent)+(idx&&idx[h]?idx[h]:'');return w.every(function(k){return txt.indexOf(k)>=0;});}
+    var tmr;inp.addEventListener('input',function(){clearTimeout(tmr);tmr=setTimeout(function(){q=inp.value.trim();shown=page;loadIdx();render();},200);});
+    xb.addEventListener('click',function(){inp.value='';q='';render();inp.focus();});
     var bar=document.createElement('div');bar.className='ftabs';
     tabs.forEach(function(t){var k=t[1];var c=cards.filter(function(x){return !k||new RegExp(k).test((x.querySelector('.cat')||{}).textContent||'');}).length;if(!c)return;
       var bt=document.createElement('button');bt.type='button';bt.innerHTML=t[0]+' <small>'+c+'</small>';if(!k)bt.className='on';
@@ -58,8 +70,11 @@
     cl.parentNode.insertBefore(bar,cl);
     var mb=document.createElement('button');mb.type='button';mb.className='more-btn';cl.parentNode.insertBefore(mb,cl.nextSibling);
     mb.addEventListener('click',function(){shown+=page;render();});
-    function render(){var k=0,tot=0;cards.forEach(function(x){var ok=!cur||new RegExp(cur).test((x.querySelector('.cat')||{}).textContent||'');if(ok)tot++;var vis=ok&&k<shown;if(ok)k++;x.classList.toggle('is-hidden',!vis);});
-      var left=tot-Math.min(tot,shown);mb.style.display=left>0?'':'none';mb.innerHTML='칼럼 더 보기 <small>('+left+'편 더)</small> ▼';}
+    function render(){var k=0,tot=0;cards.forEach(function(x){var ok=(!cur||new RegExp(cur).test((x.querySelector('.cat')||{}).textContent||''))&&hit(x);if(ok)tot++;var vis=ok&&k<shown;if(ok)k++;x.classList.toggle('is-hidden',!vis);});
+      var left=tot-Math.min(tot,shown);mb.style.display=left>0?'':'none';mb.innerHTML='칼럼 더 보기 <small>('+left+'편 더)</small> ▼';
+      xb.style.display=q?'':'none';
+      info.innerHTML=q?(tot?'‘<b>'+q.replace(/</g,'&lt;')+'</b>’ 검색 결과 <b>'+tot+'</b>편':'‘<b>'+q.replace(/</g,'&lt;')+'</b>’에 맞는 칼럼이 없습니다. 다른 낱말로 찾아보시거나 <a href="https://pf.kakao.com/_wdZNX/chat">카카오톡으로 물어봐 주세요</a>.')+(q&&!idx?' <small>(본문까지 찾는 중…)</small>':''):'';}
+    var qs=(location.search.match(/[?&]q=([^&]*)/)||[])[1];if(qs){try{q=decodeURIComponent(qs.replace(/\+/g,' ')).trim();}catch(e){}inp.value=q;loadIdx();}
     render();
   }
 
