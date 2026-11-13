@@ -459,3 +459,12 @@ section[id]{scroll-margin-top:78px}
 .nw-acc+.more-btn{margin-top:10px;font-size:14px;padding:9px 20px}
 .sd .sd-dd{display:block;font-style:normal;font-size:13px;font-weight:900;color:#c0392b;margin-top:2px;letter-spacing:.3px}
 .sch-list h4 .dd{display:none}
+/* 큰 화면(1440px 이상)에서는 본문 폭을 넓혀 좌우 여백을 줄임 */
+@media(min-width:1440px){
+  .wrap{max-width:1320px}
+  .wrap.wide{max-width:1400px}
+  .col-list{grid-template-columns:repeat(4,1fr)}
+  .nw-top{gap:28px}
+}
+@media(max-width:1439px){#column .col-list>.col-card:nth-of-type(n+7){display:none}}
+@media(min-width:561px) and (max-width:900px){#column .col-list>.col-card:nth-of-type(n+7){display:none}}
