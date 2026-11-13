@@ -404,3 +404,58 @@ section[id]{scroll-margin-top:78px}
 
 @media(min-width:761px) and (max-width:1320px){.nav{gap:14px;font-size:14px;align-items:center}.nav .call,.nav .kakao{padding:7px 10px}}
 @media(min-width:761px) and (max-width:1000px){.nav{gap:9px;font-size:13px}.nav .call,.nav .kakao{padding:6px 8px}.logo .lt small{display:none}.logo .lt b{white-space:nowrap;font-size:20px}}
+
+/* 목록 줄이기·탭·모바일 목록 (2026-11-13) */
+.is-hidden{display:none!important}
+.more-btn{display:block;margin:16px auto 0;background:#fff;border:1.5px solid var(--navy);color:var(--navy);font-weight:800;font-size:15px;padding:11px 26px;border-radius:999px;cursor:pointer;font-family:inherit}
+.more-btn small{font-weight:600;opacity:.75}
+.more-btn:hover{background:var(--navy);color:#fff}
+.ftabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 14px;margin-bottom:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.ftabs::-webkit-scrollbar{display:none}
+.ftabs button{flex:none;border:1.5px solid var(--line);background:#fff;color:var(--sub);font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;cursor:pointer;font-family:inherit}
+.ftabs button small{color:var(--muted);font-weight:600;margin-left:2px}
+.ftabs button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.ftabs button.on small{color:#cfd8e8}
+@media(max-width:560px){
+  .col-list{gap:10px}
+  .col-card{flex-direction:row;align-items:center}
+  .col-card img{width:92px;height:92px;flex:none;aspect-ratio:auto}
+  .col-card .b{padding:10px 12px}
+  .col-card h3{font-size:15px;margin:2px 0 4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .col-card .cat,.col-card .d{font-size:12px}
+}
+/* 모바일: 업무분야 접기, 소식 3줄 요약 */
+@media(max-width:600px){
+  .svc{gap:10px}
+  .svc-card{padding:16px 18px;cursor:pointer}
+  .svc-card h3{font-size:18px;margin:0 0 4px}
+  .svc-card h3::after{content:"▾";margin-left:auto;color:#a27b4a;font-size:16px;transition:transform .2s}
+  .svc-card.open h3::after{transform:rotate(180deg)}
+  .svc-card p{margin-bottom:0;font-size:14px}
+  .svc-card ul{display:none;margin-top:8px}
+  .svc-card.open ul{display:block}
+  .nw-list .nw p.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .nw-more{background:none;border:0;color:#3d5079;font-weight:700;font-size:13px;padding:4px 0;cursor:pointer;font-family:inherit}
+}
+@media(min-width:601px){.nw-more{display:none}}
+/* 세법 개정 카드 안 최신 소식(아코디언) · 신고 일정 D-day (2026-11-13) */
+.nw-card{border-top:1px solid #e3e7ee;margin-top:16px;padding-top:18px}
+.nw-card h3{font-size:18px}
+.nw-acc{border:0;border-radius:0;margin-top:8px;background:none}
+.nw-acc .nw{display:block;padding:12px 4px 12px 12px;border-left:3px solid #d9b86c;border-top:1px solid #eef1f5;cursor:pointer;position:relative}
+.nw-acc .nw:first-child{border-top:0}
+.nw-acc .nw.a{border-left-color:#d9b86c}
+.nw-acc .nw-d{width:auto;display:flex;gap:8px;align-items:baseline}
+.nw-acc .nw-d b{font-size:13px}
+.nw-acc .nw-d small{font-size:12px}
+.nw-acc .nw h4{font-size:15px;margin:4px 26px 0 0}
+.nw-acc .nw::after{content:"▾";position:absolute;right:6px;top:14px;color:#a27b4a;font-size:14px;transition:transform .2s}
+.nw-acc .nw.open::after{transform:rotate(180deg)}
+.nw-acc .nw .nw-tag{display:inline-flex;margin-top:4px}
+.nw-acc .nw p,.nw-acc .nw .nw-src{display:none}
+.nw-acc .nw.open p,.nw-acc .nw.open .nw-src{display:block}
+.nw-acc .nw.open p{margin-top:6px;font-size:14px}
+.nw-acc .nw.open h4{color:#0f2448}
+.nw-acc+.more-btn{margin-top:10px;font-size:14px;padding:9px 20px}
+.sd .sd-dd{display:block;font-style:normal;font-size:13px;font-weight:900;color:#c0392b;margin-top:2px;letter-spacing:.3px}
+.sch-list h4 .dd{display:none}

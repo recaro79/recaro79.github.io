@@ -7,9 +7,9 @@
   /* 2) 홈 '카드뉴스' 갤러리: 칼럼 목록에서 자동으로 만듦 */
   var g=document.getElementById('cnGallery');
   if(g){
-    var seen={},html='';
+    var seen={},html='',lim=+(g.getAttribute('data-limit')||999),cnt=0;
     [].forEach.call(document.querySelectorAll('#column .col-card'),function(c){
-      var href=c.getAttribute('href')||'';var m=href.match(/\/column\/(\d+)-/);if(!m||seen[m[1]])return;seen[m[1]]=1;
+      var href=c.getAttribute('href')||'';var m=href.match(/\/column\/(\d+)-/);if(!m||seen[m[1]]||cnt>=lim)return;seen[m[1]]=1;cnt++;
       var t=(c.querySelector('h3')||{}).textContent||'';var cat=(c.querySelector('.cat')||{}).textContent||'';
       html+='<a class="cg-item" href="'+href+'#cn"><span class="cg-img"><img src="/assets/cardnews/'+m[1]+'/1.jpg" alt="'+t.replace(/"/g,'')+' 카드뉴스" loading="lazy"><em>카드뉴스 7장 ›</em></span><span class="cg-cat">'+cat+'</span><b>'+t+'</b></a>';
     });
@@ -30,6 +30,46 @@
     [].forEach.call(ds,function(d,j){d.addEventListener('click',function(){var w=imgs[0].getBoundingClientRect().width+14;tr.scrollTo({left:j*w,behavior:'smooth'});});});
     tr.addEventListener('scroll',function(){window.requestAnimationFrame(upd);});upd();
   });
+
+
+  /* 5) 목록 줄이기: data-more="N" → 처음 N개만 보이고 '더 보기'로 펼침(data-nobtn 이면 버튼 없이 숨김만) */
+  [].forEach.call(document.querySelectorAll('[data-more]'),function(box){
+    var n=+box.getAttribute('data-more');var items=[].filter.call(box.children,function(e){return e.nodeType===1&&(e.tagName==='ARTICLE'||e.tagName==='A'||e.tagName==='LI');});
+    if(items.length<=n)return;
+    items.forEach(function(e,i){if(i>=n)e.classList.add('is-hidden');});
+    if(box.hasAttribute('data-nobtn'))return;
+    var unit=box.getAttribute('data-unit')||'개';var lb=box.getAttribute('data-label')||'더 보기';
+    var b=document.createElement('button');b.type='button';b.className='more-btn';
+    var open=false;function txt(){b.innerHTML=open?'접기 ▲':lb+' <small>('+(items.length-n)+unit+' 더)</small> ▼';}txt();
+    b.addEventListener('click',function(){open=!open;items.forEach(function(e,i){if(i>=n)e.classList.toggle('is-hidden',!open);});txt();if(!open)box.scrollIntoView({block:'start',behavior:'smooth'});});
+    box.parentNode.insertBefore(b,box.nextSibling);
+  });
+
+  /* 6) 칼럼 목록 페이지: 세목 탭 + 12편씩 더 보기 */
+  var cl=document.querySelector('.col-list[data-filter]');
+  if(cl){
+    var cards=[].slice.call(cl.querySelectorAll('.col-card'));var page=+(cl.getAttribute('data-filter')||12);
+    var tabs=[['전체',''],['양도소득세','양도'],['상속세','상속'],['증여세','증여'],['종합소득세','종합소득'],['법인세','법인'],['부가가치세·기타','부가|취득']];
+    var cur='',shown=page;
+    var bar=document.createElement('div');bar.className='ftabs';
+    tabs.forEach(function(t){var k=t[1];var c=cards.filter(function(x){return !k||new RegExp(k).test((x.querySelector('.cat')||{}).textContent||'');}).length;if(!c)return;
+      var bt=document.createElement('button');bt.type='button';bt.innerHTML=t[0]+' <small>'+c+'</small>';if(!k)bt.className='on';
+      bt.addEventListener('click',function(){cur=k;shown=page;[].forEach.call(bar.children,function(z){z.className='';});bt.className='on';render();});bar.appendChild(bt);});
+    cl.parentNode.insertBefore(bar,cl);
+    var mb=document.createElement('button');mb.type='button';mb.className='more-btn';cl.parentNode.insertBefore(mb,cl.nextSibling);
+    mb.addEventListener('click',function(){shown+=page;render();});
+    function render(){var k=0,tot=0;cards.forEach(function(x){var ok=!cur||new RegExp(cur).test((x.querySelector('.cat')||{}).textContent||'');if(ok)tot++;var vis=ok&&k<shown;if(ok)k++;x.classList.toggle('is-hidden',!vis);});
+      var left=tot-Math.min(tot,shown);mb.style.display=left>0?'':'none';mb.innerHTML='칼럼 더 보기 <small>('+left+'편 더)</small> ▼';}
+    render();
+  }
+
+  /* 7) 모바일: 업무분야 카드 눌러서 펼치기, 소식 본문 3줄 요약 + '자세히' */
+  [].forEach.call(document.querySelectorAll('.svc-card'),function(c){c.addEventListener('click',function(){if(window.innerWidth<=600)c.classList.toggle('open');});});
+  [].forEach.call(document.querySelectorAll('.nw-acc .nw'),function(a){a.addEventListener('click',function(e){if(e.target.closest('a'))return;a.classList.toggle('open');});});
+  if(window.innerWidth<=600){[].forEach.call(document.querySelectorAll('#news .nw-list:not(.nw-acc) .nw p, #press-x .nw p'),function(p){
+    p.classList.add('clamp');if(p.scrollHeight<=p.clientHeight+2){p.classList.remove('clamp');return;}
+    var b=document.createElement('button');b.type='button';b.className='nw-more';b.textContent='자세히 보기 ▾';
+    b.addEventListener('click',function(){var c=p.classList.toggle('clamp');b.textContent=c?'자세히 보기 ▾':'접기 ▴';});p.parentNode.insertBefore(b,p.nextSibling);});}
 
   /* 4) 칼럼 주소 끝이 #cn 이면 카드뉴스 위치로 이동 */
   if(location.hash==='#cn'){var c=document.querySelector('.cn');if(c)setTimeout(function(){c.scrollIntoView({block:'start'});},200);}
