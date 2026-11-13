@@ -141,10 +141,15 @@
         <li data-d="2027-03-31"><div class="sd"><b>3.31</b><small>수요일</small></div><div><h4>법인세 신고 (12월 결산법인) <span class="dd"></span></h4><p>사업연도 종료일이 속하는 달의 말일부터 3개월, 성실신고확인 대상은 4개월(법인세법 제60조).</p></div></li>
       </ul>
 <!-- SCHEDULE:END -->
+    <div class="nw-card">
+      <h3 class="serif">정부 보도자료 쉽게 읽기</h3>
+      <p class="tl-sub">세무 관련 정부 발표를 쉽게 정리했습니다 · 제목을 누르면 요약이 펼쳐집니다</p>
+      <div class="nw-list nw-acc" id="pressMini"></div>
+      <div class="btns" style="justify-content:center;margin-top:10px"><a class="more-btn" style="display:inline-block;margin:0;text-decoration:none" href="/press/">보도자료 전체 보기 ›</a></div>
+    </div>
     </div>
   </div>
   <p class="small c" style="margin-top:14px">※ 정부안·국회 심사 단계 내용은 확정된 법률이 아니며, 국회 의결 과정에서 바뀔 수 있습니다.</p>
-  <p class="c" style="margin-top:18px;text-align:center"><a class="btn navy" href="/press/">📰 정부 보도자료 쉽게 읽기 → <span style="font-size:13px;opacity:.8">(최신: 고용노동부 '가짜 3.3' 기획감독)</span></a></p>
 </div></section>
 
 
@@ -597,12 +602,12 @@ function cnMove(b,d){var t=b.parentNode.querySelector('.cn-track');var w=t.query
 if(n<0){li.className='past';return;}var dt=n===0?'D-day':'D-'+n;li.querySelector('.dd').textContent=dt;var sd=li.querySelector('.sd');if(sd&&!sd.querySelector('.sd-dd')){var em=document.createElement('em');em.className='sd-dd';em.textContent=dt;sd.appendChild(em);}if(!first){first=li;li.className='first';}});
 var nx=document.getElementById('tlNext');if(first&&nx){var h=first.querySelector('h4').cloneNode(true);h.removeChild(h.querySelector('.dd'));
 nx.innerHTML='<strong>'+first.querySelector('.dd').textContent+'</strong><div><b>'+h.textContent.trim()+'</b><small>'+first.querySelector('.sd b').textContent+' '+first.querySelector('.sd small').textContent+' · '+first.querySelector('p').textContent.split(' · ')[0].split('(')[0]+'</small></div>';}
-var up=[].filter.call(l.querySelectorAll('li'),function(li){return !/past/.test(li.className);});var N=window.innerWidth<=600?4:6;
+var up=[].filter.call(l.querySelectorAll('li'),function(li){return !/past/.test(li.className);});var N=3;
 if(up.length>N){up.forEach(function(li,i){if(i>=N)li.classList.add('is-hidden');});var b=document.createElement('button');b.type='button';b.className='more-btn';var o=false;
 function tx(){b.innerHTML=o?'접기 ▲':'일정 더 보기 <small>('+(up.length-N)+'건 더)</small> ▼';}tx();
 b.addEventListener('click',function(){o=!o;up.forEach(function(li,i){if(i>=N)li.classList.toggle('is-hidden',!o);});tx();});l.parentNode.insertBefore(b,l.nextSibling);}
 })();
 </script>
-<script src="/assets/cn.js?v=4" defer></script>
+<script src="/assets/cn.js?v=5" defer></script>
 </body>
 </html>

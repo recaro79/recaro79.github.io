@@ -71,6 +71,15 @@
     var b=document.createElement('button');b.type='button';b.className='nw-more';b.textContent='자세히 보기 ▾';
     b.addEventListener('click',function(){var c=p.classList.toggle('clamp');b.textContent=c?'자세히 보기 ▾':'접기 ▴';});p.parentNode.insertBefore(b,p.nextSibling);});}
 
+  /* 8) 홈 '정부 보도자료' 미니 목록: /press/ 페이지에서 최근 3건을 가져와 같은 아코디언으로 표시 */
+  var pm=document.getElementById('pressMini');
+  if(pm&&window.fetch){fetch('/press/').then(function(r){return r.text();}).then(function(h){
+    var d=new DOMParser().parseFromString(h,'text/html');var arts=[].slice.call(d.querySelectorAll('.nw-list .nw')).slice(0,3);
+    pm.innerHTML=arts.map(function(a){var id=a.id||'';var dt=a.querySelector('.nw-d');var tag=a.querySelector('.nw-tag');var h4=a.querySelector('h4');var p=a.querySelector('p');
+      return '<article class="'+a.className+'">'+(dt?dt.outerHTML:'')+'<div>'+(tag?tag.outerHTML:'')+(h4?h4.outerHTML:'')+(p?p.outerHTML:'')+'<div class="nw-src"><a href="/press/'+(id?'#'+id:'')+'">자세히 보기(체크포인트·출처) ›</a></div></div></article>';}).join('');
+    [].forEach.call(pm.querySelectorAll('.nw'),function(a){a.addEventListener('click',function(e){if(e.target.closest('a'))return;a.classList.toggle('open');});});
+  }).catch(function(){});}
+
   /* 4) 칼럼 주소 끝이 #cn 이면 카드뉴스 위치로 이동 */
   if(location.hash==='#cn'){var c=document.querySelector('.cn');if(c)setTimeout(function(){c.scrollIntoView({block:'start'});},200);}
 })();
