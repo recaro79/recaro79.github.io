@@ -556,3 +556,11 @@ body .phero::before,body .phero::after{display:none!important}
 .csearch-info:empty{display:none}
 .csearch-info b{color:#0f2448}
 @media(max-width:600px){.csearch input{font-size:16px}.csearch .go{padding:9px 14px}}
+
+/* 인스타그램·쓰레드 바로가기 */
+.pft-sns{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
+.pft-sns span{color:#5b6678;font-size:13.5px;margin-right:4px}
+.pft-sns a{display:inline-flex;align-items:center;gap:6px;color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;padding:8px 15px;border:1px solid rgba(201,169,97,.6);border-radius:999px}
+.pft-sns a:hover{background:rgba(201,169,97,.18)}
+.pc-contact a.pc-sns{background:#fff;color:#0f2448;border:1px solid #e6dfcf;font-size:15px}
+@media(max-width:600px){.pc-contact a.pc-sns{font-size:14px;padding:11px 6px}}
