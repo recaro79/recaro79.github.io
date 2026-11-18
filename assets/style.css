@@ -564,3 +564,4 @@ body .phero::before,body .phero::after{display:none!important}
 .pft-sns a:hover{background:rgba(201,169,97,.18)}
 .pc-contact a.pc-sns{background:#fff;color:#0f2448;border:1px solid #e6dfcf;font-size:15px}
 @media(max-width:600px){.pc-contact a.pc-sns{font-size:14px;padding:11px 6px}}
+.sic{vertical-align:-4px;flex:none;margin-right:2px}
