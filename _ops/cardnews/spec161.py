@@ -1,0 +1,88 @@
+NUM = 161
+SLUG = 'executive-company-housing-expense'
+CAT = '법인세'
+DATE = '2026-11-20'
+TITLE = '법인 명의 아파트에 사는 대표님, 사택 비용은 법인 비용일까요? — 지분 1% 이상 주주 임원·친족 사택은 손금불산입(상여 처분), 직원·비출자 임원 사택은 인정'
+DESC = '법인의 주주(소액주주 제외)이거나 출연자인 임원 또는 그 친족이 사용하는 사택의 유지비·관리비·사용료는 업무와 관련 없는 지출로 손금불산입되고 임원 상여로 처분될 수 있습니다. 소액주주는 1% 미만(지배주주 특수관계인 제외)이며, 주주 아닌 임원·소액주주 임원·직원의 사택 비용은 인정될 수 있습니다. 법인세법 제27조, 시행령 제50조·제106조 기준. 2026-11-20 현행 법령 기준.'
+OGDESC = '법인세법 제27조, 같은 법 시행령 제50조제1항·제2항, 제106조'
+TAGS = ['법인세', '사택', '업무무관비용', '상여처분', '대표이사', '부산세무사']
+ALTS = ['대표 사택 법인세 (표지)', '대표 사택 법인세 (손금불산입)', '대표 사택 법인세 (인정 대상)', '대표 사택 법인세 (소득처분)', '대표 사택 법인세 (계산 사례)', '대표 사택 법인세 (점검)', '대표 사택 법인세 (상담 안내)']
+
+BODY = '''<p>안녕하세요. 세무법인 인성 남기원 세무사입니다.<br>
+법인 명의로 아파트를 빌려 대표님이 사택으로 쓰시는 경우가 많습니다. 그런데 사택 비용이 법인 비용(손금)으로 인정되는지는 <b>누가 사느냐</b>, 특히 <b>그 사람이 회사 주식을 얼마나 가졌느냐</b>에 따라 달라집니다. 지분 1% 이상인 대표님이 쓰는 사택이라면 비용이 부인되고 대표님 상여로 처리될 수 있습니다.</p>
+
+<div class="sum">
+<div class="t">📌 핵심 3줄 요약</div>
+<ol><li>법인의 <b>주주(소액주주 제외)이거나 출연자인 임원</b> 또는 그 <b>친족</b>이 사용하는 <b>사택의 유지비·관리비·사용료</b>는 업무와 관련 없는 지출로 보아 <b>손금불산입</b>합니다.</li><li><b>소액주주</b>란 발행주식의 <b>1% 미만</b>을 가진 주주(지배주주의 특수관계인은 제외)이고, <b>주주가 아닌 임원·소액주주 임원·직원</b>의 사택 비용은 업무 관련 비용으로 인정될 수 있습니다.</li><li>손금불산입된 금액은 사용자에게 귀속된 것으로 보아 임원이면 <b>상여</b>로 처분되어 근로소득세가 나올 수 있습니다.</li></ol>
+<div class="small" style="margin-top:8px">(법인세법 제27조, 같은 법 시행령 제50조제1항제1호·제2호·제2항, 제106조 / 2026-11-20 현행 법령 기준)</div>
+</div>
+
+{{CARDNEWS}}
+<div class="quote">"제가 지분 60%를 가진 법인 명의로 아파트를 빌려 살고 있습니다. 월세와 관리비를 회사 비용으로 처리해도 되나요?"</div>
+
+<h2>사례로 먼저 보겠습니다</h2>
+<p><b>㈜새봄(가칭)</b>의 대표 <b>유○○ 님</b>은 지분 <b>60%</b>를 가지고 있고, 회사 명의로 빌린 아파트에 가족과 함께 삽니다. 회사가 내는 비용은 연 임차료 <b>2,400만 원</b>, 관리비 <b>360만 원</b>입니다. 같은 회사의 지분 없는 공장장도 회사가 빌린 원룸 사택을 씁니다.</p>
+<p class="small">※ 이해를 돕기 위해 구성한 가상 사례입니다.</p>
+
+<h2>1. 손금으로 인정되지 않는 사택 비용</h2>
+<div class="tbl"><table>
+<tr><th>사택 사용자</th><th>유지비·관리비·사용료</th><th>근거</th></tr>
+<tr><td><b>주주인 임원</b>(지분 1% 이상) 또는 <b>출연자인 임원</b>, 그 <b>친족</b></td><td><b>손금불산입</b></td><td>시행령 제50조제1항제2호</td></tr>
+<tr><td>법인이 직접 쓰지 않고 다른 사람이 주로 쓰는 장소·건물(아래 제외 대상 빼고)</td><td>손금불산입</td><td>같은 항 제1호</td></tr>
+<tr><td><b>주주가 아닌 임원</b>, <b>소액주주인 임원</b>, <b>직원</b></td><td>위 규정의 제외 대상 → 업무 관련 비용으로 인정 가능</td><td>같은 항 제1호 괄호</td></tr>
+</table></div>
+<p class="small">※ 소액주주: 발행주식총수의 1% 미만을 소유한 주주. 다만 국가·지방자치단체가 아닌 <b>지배주주의 특수관계인</b>은 지분이 1% 미만이어도 소액주주로 보지 않습니다(시행령 제50조제2항). 대표님의 배우자·자녀가 쓰는 사택도 친족이므로 손금불산입 대상입니다.</p>
+
+<h2>2. 소득처분</h2>
+<p>손금불산입된 사택 비용은 그 이익이 사택을 쓴 사람에게 돌아간 것으로 보아 소득처분하며, 사용자가 임원이면 <b>상여</b>로 처분합니다(법인세법 시행령 제106조). 상여로 처분되면 대표님의 <b>근로소득</b>에 더해져 소득세가 늘어날 수 있습니다.</p>
+
+<h2>3. ㈜새봄 사례 계산</h2>
+<div class="tbl"><table>
+<tr><th>구분</th><th>대표(지분 60%) 사택</th><th>공장장(지분 없음) 사택</th></tr>
+<tr><td>연간 사택 비용</td><td>2,760만 원</td><td>(원룸 임차료 등)</td></tr>
+<tr><td>법인세 처리</td><td><b>손금불산입</b> → 대표 상여 처분</td><td>손금 인정 가능</td></tr>
+<tr><td>늘어나는 법인세 (한계세율 20% 가정)</td><td><b>552만 원</b> (+ 지방소득세 55만 2천 원)</td><td>—</td></tr>
+</table></div>
+<p>대표님 사택 비용 2,760만 원은 법인 비용이 되지 않고, 대표님 상여로 처분되어 근로소득세도 따로 늘어날 수 있습니다. 사택이 꼭 필요하다면 대표님이 <b>시가 수준의 임차료를 법인에 내는 방식</b> 등을 검토해야 하며, 법인 자산을 대표에게 싸게 빌려주면 부당행위계산 문제가 생길 수 있습니다(<a href="/column/74-corporate-unfair-transaction.html">칼럼 74</a>).</p>
+<p class="small">※ 가상 사례이며 python으로 계산·검산했습니다. 2026 사업연도 법인세율(<a href="/column/144-corporate-tax-rate-2026.html">칼럼 144</a>) 20% 구간을 가정했고, 상여 처분에 따른 대표 소득세는 다른 소득에 따라 달라져 넣지 않았습니다.</p>
+
+<h2>4. 이렇게 점검하세요</h2>
+<ul class="check">
+<li>☐ 사택 사용자의 <b>지분율</b>(1% 기준)과 지배주주와의 <b>특수관계</b>를 확인했다.</li>
+<li>☐ 대표·주주 임원의 <b>가족</b>이 쓰는 사택도 손금불산입 대상임을 알고 있다.</li>
+<li>☐ 직원·비출자임원 사택은 <b>사택 규정</b>을 갖추고 실제 거주를 확인했다.</li>
+<li>☐ 주주 임원 사택이라면 <b>임차료 부담 방식</b>을 다시 설계했다.</li>
+<li>☐ 상여 처분에 따른 <b>원천징수·연말정산</b> 영향을 확인했다.</li>
+</ul>
+<p>사택·차량·법인카드처럼 대표님 개인과 법인의 경계가 애매한 비용은 미리 정리해 두는 것이 안전합니다. 편하게 상의해 주세요.</p>
+
+<h2>상담 때 준비하시면 좋은 자료</h2>
+<div class="tbl"><table>
+<tr><th>자료</th><th>확인 내용</th></tr>
+<tr><td>주주명부</td><td>사용자의 지분율(1% 기준), 특수관계</td></tr>
+<tr><td>사택 임대차계약서·관리비 내역</td><td>지출 금액</td></tr>
+<tr><td>임원·직원 사택 규정</td><td>사용 대상·기준</td></tr>
+<tr><td>사용자 주민등록표 등본</td><td>실제 거주자, 친족 여부</td></tr>
+<tr><td>법인세 신고서·소득처분 내역</td><td>상여 처분 여부</td></tr>
+</table></div>
+<p class="small">※ 상담 요청 시 주민등록번호, 계좌번호, 서류 원본은 문자나 카카오톡으로 보내지 않으셔도 됩니다. 상담 때 필요한 자료를 따로 안내해 드리겠습니다.</p>
+<div class="cta">
+<p><b>📞 상담 안내</b></p>
+<p>세무법인 인성 남기원 세무사</p>
+<p>부산광역시 연제구 월드컵대로 153 연희빌딩 3층</p>
+<p>평일 09:00~18:00 · ☎ 010-7741-4822 · recaro798@gmail.com</p>
+<p style="font-size:14px;opacity:.9">그 외 시간에는 카카오톡 채널이나 문자로 상담 요청을 남겨 주시면, 상담 가능한 시간에 연락드리겠습니다.</p>
+<div class="btns"><a class="btn kakao" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카카오톡 상담</a><a class="btn gold" href="tel:01077414822">☎ 전화 상담</a><a class="btn line" href="sms:01077414822">문자 상담</a></div>
+</div>
+'''
+
+F = '<div class="foot"><b>세무법인 인성 남기원 세무사</b><span>{} / 7</span></div>'
+CARDS = [
+'<div class="c navy pad"><span class="tag">법인세</span><div class="gold serif" style="font-size:42px;font-weight:700;margin-top:90px">법인 명의 아파트에 사는 대표님</div><div class="h serif" style="font-size:76px;margin-top:30px">사택 비용,<br><em>비용 처리</em><br>될까요?</div><div class="swipe">넘겨 보세요 →</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>2026.11.20 현행 법령 기준</span></div></div>',
+'<div class="c cream pad"><div class="no">01</div><span class="tag">손금불산입</span><div class="h serif" style="font-size:60px">지분 1% 이상<br><em>주주 임원 사택</em></div><div class="list" style="margin-top:30px"><div class="it"><div class="n">1</div><div><b>주주·출연자 임원</b><span>유지비·관리비·임차료 부인</span></div></div><div class="it"><div class="n">2</div><div><b>그 친족</b><span>배우자·자녀 사용도 포함</span></div></div><div class="it"><div class="n">3</div><div><b>업무무관 지출</b><span>법인 비용 아님</span></div></div></div><div class="law" style="margin-top:20px">법인세법 제27조 · 시행령 제50조</div>' + F.format(2) + '</div>',
+'<div class="c navy pad"><div class="no">02</div><span class="tag">인정</span><div class="h serif" style="font-size:60px">직원·비출자 임원<br><em>사택은 가능</em></div><div class="list" style="margin-top:24px"><div class="it"><div class="n">1</div><div><b>직원</b><span>주주 임원의 친족은 제외</span></div></div><div class="it"><div class="n">2</div><div><b>주주 아닌 임원</b><span>비출자 임원</span></div></div><div class="it"><div class="n">3</div><div><b>소액주주 임원</b><span>1% 미만 (특수관계인 제외)</span></div></div></div><div class="law">법인세법 시행령 제50조제1항제1호·제2항</div>' + F.format(3) + '</div>',
+'<div class="c cream pad"><div class="no">03</div><span class="tag">소득처분</span><div class="h serif" style="font-size:58px">부인된 비용은<br><em>대표 상여</em></div><div class="box"><div class="t">처분</div><div class="f" style="font-size:32px">사용자가 임원이면 상여</div></div><div class="box" style="margin-top:26px"><div class="t">결과</div><div class="f" style="font-size:32px">법인세 증가 +<br>대표 근로소득세 증가</div></div><div class="law">법인세법 시행령 제106조</div>' + F.format(4) + '</div>',
+'<div class="c navy pad"><div class="no">04</div><span class="tag">계산 사례</span><div class="h serif" style="font-size:52px">대표(지분 60%) 사택<br>연 2,760만 원</div><div class="sub" style="font-size:28px;margin-top:22px">임차료 2,400만 + 관리비 360만 (가상 사례)</div><div class="cmp"><div class="a"><small>손금 처리</small><strong>불인정</strong><i>상여 처분</i></div><div class="b"><small>법인세 증가</small><strong>552만 원</strong><i>한계세율 20% 가정</i></div></div><div class="diff">직원 사택은 <span>비용 인정 가능</span></div><div class="law">가상 사례 · python 검산</div>' + F.format(5) + '</div>',
+'<div class="c cream pad"><div class="no">05</div><span class="tag">꼭 확인</span><div class="h serif" style="font-size:62px">사택 운영 전<br>3가지 점검</div><div class="list" style="margin-top:36px"><div class="it"><div class="n">!</div><div><b>사용자 지분율</b><span>1% 기준·특수관계</span></div></div><div class="it"><div class="n">!</div><div><b>사택 규정</b><span>직원 사택 기준 마련</span></div></div><div class="it"><div class="n">!</div><div><b>임차료 부담 설계</b><span>대표가 시가 부담 등</span></div></div></div><div class="law">법인세법 시행령 제50조</div>' + F.format(6) + '</div>',
+'<div class="c navy pad"><div class="gold serif" style="font-size:40px;font-weight:700">대표님과 법인의 경계 정리</div><div class="h serif" style="font-size:80px;margin-top:20px">먼저 상의하세요</div><div class="cta-p"><img class="ph" src="profile.jpg"><div class="r"><small>지점대표세무사</small><b class="serif">남기원</b><span>세무법인 인성 · 세무 경력 20년</span></div></div><div class="contact"><img src="qr.png"><div><div class="tel">010-7741-4822</div><p>카카오톡 상담: QR을 찍어 주세요<br>평일 09:00~18:00<br>recaro79.github.io</p></div></div><div class="foot"><b>세무법인 인성</b><span>부산 연제구 월드컵대로 153</span></div></div>',
+]
