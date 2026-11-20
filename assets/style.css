@@ -565,3 +565,6 @@ body .phero::before,body .phero::after{display:none!important}
 .pc-contact a.pc-sns{background:#fff;color:#0f2448;border:1px solid #e6dfcf;font-size:15px}
 @media(max-width:600px){.pc-contact a.pc-sns{font-size:14px;padding:11px 6px}}
 .sic{vertical-align:-4px;flex:none;margin-right:2px}
+
+/* 세목별 안내: 모의계산 가능 표시 */
+.guide a .gmark{font-style:normal;font-size:12.5px;font-weight:800;color:#b00020;background:#fff1f1;border:1px solid #f1c4c4;border-radius:999px;padding:2px 9px;margin-left:4px;white-space:nowrap}
