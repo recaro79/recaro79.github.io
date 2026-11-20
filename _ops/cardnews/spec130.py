@@ -1,0 +1,116 @@
+NUM = 130
+SLUG = 'farmland-replacement-tax-exemption'
+CAT = '양도소득세'
+DATE = '2026-11-20'
+TITLE = '농지를 팔고 다른 농지로 옮겨 농사지으신다면 — 농지대토 양도세 100% 감면(4년 거주·경작, 1년 안 대토, 합산 8년), 5년간 1억 원 한도'
+DESC = '농지 소재지에 4년 이상 거주하며 직접 경작한 농지를 팔고 1년(수용은 2년) 안에 면적 3분의 2 이상 또는 가액 2분의 1 이상의 새 농지를 취득해 1년 안에 경작을 시작하고, 종전·새 농지 경작기간을 합해 8년 이상 경작하면 양도세를 감면합니다. 감면은 과세기간별 1억 원, 5년간 1억 원 한도입니다. 조세특례제한법 제70조·제133조, 시행령 제67조 기준. 2026-11-20 현행 법령 기준.'
+OGDESC = '조세특례제한법 제70조, 제133조제1항, 같은 법 시행령 제66조제14항, 제67조, 시행규칙 제27조·제28조'
+TAGS = ['양도소득세', '농지대토', '자경농지', '감면', '농업인', '부산세무사']
+ALTS = ['농지대토 감면 (표지)', '농지대토 감면 (기본 요건)', '농지대토 감면 (대토 요건)', '농지대토 감면 (경작기간 제외)', '농지대토 감면 (계산 사례)', '농지대토 감면 (한도·추징)', '농지대토 감면 (상담 안내)']
+
+BODY = '''<p>안녕하세요. 세무법인 인성 남기원 세무사입니다.<br>
+8년 이상 직접 농사지은 땅을 팔면 양도세를 감면받는 <b>8년 자경농지 감면</b>(<a href="/column/26-farmland-8year-exemption.html">칼럼 26</a>)은 많이 알려져 있습니다. 그런데 아직 8년을 채우지 못했더라도, 농사를 계속하기 위해 <b>농지를 팔고 다른 농지를 사서 옮겨 농사짓는 경우</b>에는 <b>농지대토 감면</b>을 받을 수 있습니다. 요건이 까다로운 만큼 순서대로 정리해 드립니다.</p>
+
+<div class="sum">
+<div class="t">📌 핵심 3줄 요약</div>
+<ol><li>농지 소재지에 <b>4년 이상 거주하며 직접 경작</b>한 농지를 팔고, <b>1년 안</b>(수용은 2년)에 새 농지를 사서(또는 먼저 사고 1년 안에 팔고) <b>1년 안에 새 농지 소재지에 살며 경작</b>을 시작하면 양도세를 <b>100% 감면</b>합니다.</li><li>새 농지는 종전 농지의 <b>면적 3분의 2 이상</b> 또는 <b>가액 2분의 1 이상</b>이어야 하고, 종전·새 농지 경작기간을 <b>합해 8년 이상</b> 계속 경작해야 합니다.</li><li>감면은 <b>과세기간별 1억 원</b>, <b>5년간 1억 원</b> 한도이고, 요건을 채우지 못하면 감면세액과 이자상당액을 추징합니다.</li></ol>
+<div class="small" style="margin-top:8px">(조세특례제한법 제70조, 제133조제1항, 같은 법 시행령 제67조 / 2026-11-20 현행 법령 기준)</div>
+</div>
+
+{{CARDNEWS}}
+<div class="quote">"6년째 농사짓던 논이 도로 옆이라 팔고, 좀 더 들어간 곳에 더 넓은 논을 사서 농사를 계속하려 합니다. 8년이 안 돼서 양도세 감면은 못 받겠지요?"</div>
+
+<h2>사례로 먼저 보겠습니다</h2>
+<p><b>허○○ 님</b>은 경남의 한 군에 살면서 <b>6년간 직접 경작</b>한 논(취득가액 1억 원)을 <b>3억 원</b>에 팔았습니다. 그리고 <b>8개월 뒤</b> 같은 군의 다른 논을 <b>2억 5,000만 원</b>에 사서 바로 농사를 시작했고, 앞으로도 계속 거주하며 경작할 계획입니다.</p>
+<p class="small">※ 이해를 돕기 위해 구성한 가상 사례입니다. 경작기간 중 다른 사업소득·근로소득은 없었고, 주거지역 편입 등은 없으며, 필요경비는 없다고 가정했습니다.</p>
+
+<h2>1. 기본 요건 — 누가, 어떤 농지를</h2>
+<div class="tbl"><table>
+<tr><th>요건</th><th>내용</th><th>근거</th></tr>
+<tr><td>거주</td><td>종전 농지 양도일 현재 <b>4년 이상</b> 농지 소재지에 거주한 <b>거주자</b> (농지가 있는 시·군·구, 연접한 시·군·구, 농지로부터 <b>직선거리 30km 이내</b>)</td><td>시행령 제67조제1항</td></tr>
+<tr><td>직접 경작</td><td>농작업에 <b>상시 종사</b>하거나 농작업의 <b>2분의 1 이상을 자기 노동력</b>으로 경작</td><td>시행령 제67조제2항</td></tr>
+<tr><td>농지</td><td>전·답으로 <b>실제 경작</b>에 쓰는 토지(지목과 관계없음, 농막·수로 등 포함)</td><td>시행규칙 제27조제1항</td></tr>
+<tr><td>제외 농지</td><td>시(광역시 군·도농복합시 읍면 제외) 지역의 <b>주거·상업·공업지역</b>에 편입된 지 3년이 지난 농지 등</td><td>법 제70조제2항, 시행령 제67조제8항</td></tr>
+</table></div>
+
+<h2>2. 대토 요건 — 순서와 기간</h2>
+<div class="tbl"><table>
+<tr><th>구분</th><th>먼저 팔고 나중에 사는 경우</th><th>먼저 사고 나중에 파는 경우</th></tr>
+<tr><td>취득·양도 기간</td><td>종전 농지 양도일부터 <b>1년 안</b> 새 농지 취득<br>(수용은 2년, 상속·증여 취득 제외)</td><td>새 농지 취득일부터 <b>1년 안</b> 종전 농지 양도<br>(수용은 2년)</td></tr>
+<tr><td>경작 개시</td><td>새 농지 <b>취득일부터 1년 안</b>에 새 농지 소재지에 거주하며 경작 시작</td><td>종전 농지 <b>양도일부터 1년 안</b>에 경작 시작</td></tr>
+<tr><td>규모</td><td colspan="2">새 농지 <b>면적 ≥ 종전 농지의 3분의 2</b> 또는 <b>가액 ≥ 종전 농지의 2분의 1</b></td></tr>
+<tr><td>계속 경작</td><td colspan="2">새 농지 경작 개시 후 계속 경작한 기간 + 종전 농지 경작기간 = <b>8년 이상</b></td></tr>
+</table></div>
+<p class="small">※ 시행령 제67조제3항. 1년 이상 치료·요양이 필요한 질병, 농지개량을 위한 휴경, 자연재해로 경작하지 못하면 경작 개시 기간이 <b>2년</b>으로 늘어납니다(시행규칙 제28조). 새 농지를 취득한 뒤 4년 안에 수용되면 4년 거주·경작한 것으로 보고, 8년을 채우기 전에 사망해 상속인이 계속 경작하면 기간을 통산합니다(시행령 제67조제4항·제5항).</p>
+
+<h2>3. 이런 해는 경작기간에서 빠집니다</h2>
+<ul class="check">
+<li>✔ 그해 <b>사업소득금액</b>(농업·임업, 부동산임대업, 농가부업소득 제외)과 <b>총급여액</b>의 합계가 <b>3,700만 원 이상</b>인 과세기간</li>
+<li>✔ 그해 사업소득 총수입금액(농업·임업 등 제외)이 <b>복식부기의무자 기준 금액</b>(업종별 3억 원·1억 5천만 원·7,500만 원) 이상인 과세기간</li>
+<li>✔ 이 기간이 8년을 채우기 전에 생기면 새 농지를 <b>계속 경작하지 않은 것</b>으로 봅니다.</li>
+</ul>
+<p class="small">※ 시행령 제67조제6항, 제66조제14항. 직장을 다니거나 다른 사업을 하면서 주말에만 농사짓는 경우 감면이 어려울 수 있습니다.</p>
+
+<h2>4. 허○○ 님 사례 계산</h2>
+<div class="tbl"><table>
+<tr><th>구분</th><th class="r">금액(원)</th></tr>
+<tr><td>양도차익 (3억 − 1억)</td><td class="r">200,000,000</td></tr>
+<tr><td>장기보유특별공제 12%(6년 보유)</td><td class="r">−24,000,000</td></tr>
+<tr><td>과세표준 (기본공제 250만 차감)</td><td class="r">173,500,000</td></tr>
+<tr><td>산출세액 (3,706만 원 + 1억 5천만 원 초과액의 38%)</td><td class="r">45,990,000</td></tr>
+<tr><td>농지대토 감면 100% (한도 1억 원 이내)</td><td class="r">−45,990,000</td></tr>
+<tr><td><b>낼 양도소득세</b></td><td class="r"><b>0</b></td></tr>
+</table></div>
+<p>요건 점검: 4년 이상 거주·경작(6년) ✔, 양도 후 1년 안 취득(8개월) ✔, 새 농지 가액 2억 5천만 원 ≥ 종전 3억 원의 2분의 1 ✔, 취득 후 1년 안 경작 개시 ✔. 다만 새 농지에서 <b>앞으로 2년 이상 더</b> 거주·경작해야 합산 8년이 채워집니다.</p>
+<p class="small">※ 가상 사례이며 python으로 계산·검산했습니다. 세율은 소득세법 제55조제1항, 장기보유특별공제는 제95조제2항 표 1 기준입니다. 지방소득세는 별도로 확인하셔야 합니다.</p>
+
+<h2>5. 한도와 추징</h2>
+<div class="tbl"><table>
+<tr><th>구분</th><th>내용</th></tr>
+<tr><td>과세기간별 한도</td><td>자경농지(제69조)·농지대토(제70조) 등 감면 합계 <b>연 1억 원</b></td></tr>
+<tr><td>5년간 한도</td><td>농지대토 감면 합계 <b>5년간 1억 원</b> (자경농지 등과 합쳐서는 5년간 2억 원)</td></tr>
+<tr><td>추징</td><td>요건을 충족하지 못하게 된 경우(예: 8년을 채우기 전 경작 중단) 그 사유가 생긴 달의 말일부터 <b>2개월 안</b>에 감면세액 + 이자상당액 납부</td></tr>
+<tr><td>신청</td><td>양도소득세 신고 때 <b>세액감면신청서</b> 제출</td></tr>
+</table></div>
+<p class="small">※ 조세특례제한법 제133조제1항, 제70조제3항~제5항. 토지를 분할해 1년 안에 일부를 팔거나 지분을 팔고 2년 안에 나머지를 같은 사람(배우자 포함)에게 팔면 한 과세기간에 양도한 것으로 봅니다(제133조제3항).</p>
+
+<h2>6. 이렇게 점검하세요</h2>
+<ul class="check">
+<li>☐ 종전 농지 양도일 현재 <b>4년 이상 거주·경작</b>했고, 주민등록·농지대장·자경증명으로 확인된다.</li>
+<li>☐ 새 농지 취득·종전 농지 양도가 <b>1년 안</b>(수용 2년)에 이루어진다.</li>
+<li>☐ 새 농지가 <b>면적 3분의 2 이상</b> 또는 <b>가액 2분의 1 이상</b>이다.</li>
+<li>☐ 경작기간 중 <b>근로·사업소득 3,700만 원 이상</b>인 해가 없다.</li>
+<li>☐ 종전·새 농지를 합쳐 <b>8년</b>이 될 때까지 계속 거주·경작할 계획이다.</li>
+</ul>
+<p>대토 감면은 “언제 사고 언제 파느냐”의 순서와 기간이 핵심입니다. 계약 전에 연락 주시면 날짜부터 함께 맞춰 드리겠습니다.</p>
+
+<h2>상담 때 준비하시면 좋은 자료</h2>
+<div class="tbl"><table>
+<tr><th>자료</th><th>확인 내용</th></tr>
+<tr><td>주민등록초본</td><td>농지 소재지 거주 기간</td></tr>
+<tr><td>농지대장·자경증명</td><td>직접 경작 사실, 경작 기간</td></tr>
+<tr><td>매매계약서(종전·새 농지)</td><td>양도일·취득일, 면적·가액</td></tr>
+<tr><td>토지이용계획확인서</td><td>주거·상업·공업지역 편입 여부</td></tr>
+<tr><td>최근 종합소득세·근로소득 자료</td><td>3,700만 원 기준 해당 여부</td></tr>
+</table></div>
+<p class="small">※ 상담 요청 시 주민등록번호, 계좌번호, 서류 원본은 문자나 카카오톡으로 보내지 않으셔도 됩니다. 상담 때 필요한 자료를 따로 안내해 드리겠습니다.</p>
+<div class="cta">
+<p><b>📞 상담 안내</b></p>
+<p>세무법인 인성 남기원 세무사</p>
+<p>부산광역시 연제구 월드컵대로 153 연희빌딩 3층</p>
+<p>평일 09:00~18:00 · ☎ 010-7741-4822 · recaro798@gmail.com</p>
+<p style="font-size:14px;opacity:.9">그 외 시간에는 카카오톡 채널이나 문자로 상담 요청을 남겨 주시면, 상담 가능한 시간에 연락드리겠습니다.</p>
+<div class="btns"><a class="btn kakao" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카카오톡 상담</a><a class="btn gold" href="tel:01077414822">☎ 전화 상담</a><a class="btn line" href="sms:01077414822">문자 상담</a></div>
+</div>
+'''
+
+F = '<div class="foot"><b>세무법인 인성 남기원 세무사</b><span>{} / 7</span></div>'
+CARDS = [
+'<div class="c navy pad"><span class="tag">양도소득세</span><div class="gold serif" style="font-size:42px;font-weight:700;margin-top:90px">농지를 옮겨 농사지으신다면</div><div class="h serif" style="font-size:80px;margin-top:30px">농지대토<br>양도세<br><em>100% 감면</em></div><div class="swipe">넘겨 보세요 →</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>2026.11.20 현행 법령 기준</span></div></div>',
+'<div class="c cream pad"><div class="no">01</div><span class="tag">기본 요건</span><div class="h serif" style="font-size:60px">4년 이상<br><em>살면서 직접</em> 경작</div><div class="list" style="margin-top:30px"><div class="it"><div class="n">1</div><div><b>거주</b><span>같은·연접 시군구 또는 30km 이내</span></div></div><div class="it"><div class="n">2</div><div><b>직접 경작</b><span>상시 종사 또는 절반 이상 자기 노동</span></div></div><div class="it"><div class="n">3</div><div><b>실제 농지</b><span>지목과 관계없이 경작 중인 전·답</span></div></div></div><div class="law" style="margin-top:20px">조세특례제한법 시행령 제67조제1항·제2항</div>' + F.format(2) + '</div>',
+'<div class="c navy pad"><div class="no">02</div><span class="tag">대토 요건</span><div class="h serif" style="font-size:60px">1년 안에<br><em>사고, 경작 시작</em></div><div class="list" style="margin-top:24px"><div class="it"><div class="n">1</div><div><b>1년 안 취득(양도)</b><span>수용은 2년</span></div></div><div class="it"><div class="n">2</div><div><b>면적 2/3 또는 가액 1/2 이상</b><span>새 농지 규모</span></div></div><div class="it"><div class="n">3</div><div><b>합산 8년 이상 경작</b><span>종전 + 새 농지 경작기간</span></div></div></div><div class="law">조세특례제한법 시행령 제67조제3항</div>' + F.format(3) + '</div>',
+'<div class="c cream pad"><div class="no">03</div><span class="tag">기간 제외</span><div class="h serif" style="font-size:58px">이런 해는<br><em>경작기간 제외</em></div><div class="box"><div class="t">소득 기준</div><div class="f" style="font-size:36px">사업소득금액 + 총급여<br>3,700만 원 이상인 해</div></div><div class="box" style="margin-top:26px"><div class="t">수입 기준</div><div class="f" style="font-size:36px">사업 수입이 복식부기<br>의무자 기준 이상인 해</div></div><div class="law">시행령 제67조제6항 · 제66조제14항</div>' + F.format(4) + '</div>',
+'<div class="c navy pad"><div class="no">04</div><span class="tag">계산 사례</span><div class="h serif" style="font-size:52px">6년 경작 논 3억 매도<br>8개월 뒤 2.5억 논 취득</div><div class="sub" style="font-size:28px;margin-top:22px">취득가액 1억 · 장기보유특별공제 12% (가상 사례)</div><div class="cmp"><div class="a"><small>감면 없으면</small><strong>4,599만</strong><i>양도소득세</i></div><div class="b"><small>농지대토 감면</small><strong>0원</strong><i>100% 감면</i></div></div><div class="diff">새 농지에서 <span>2년 이상</span> 더 경작 필요</div><div class="law">가상 사례 · python 검산 · 지방소득세 별도</div>' + F.format(5) + '</div>',
+'<div class="c cream pad"><div class="no">05</div><span class="tag">한도·추징</span><div class="h serif" style="font-size:62px">한도와<br>추징 주의</div><div class="list" style="margin-top:36px"><div class="it"><div class="n">!</div><div><b>연 1억 원</b><span>자경농지 감면 등과 합산</span></div></div><div class="it"><div class="n">!</div><div><b>5년간 1억 원</b><span>농지대토 감면 합계</span></div></div><div class="it"><div class="n">!</div><div><b>요건 미충족 시 추징</b><span>2개월 안 감면세액 + 이자</span></div></div></div><div class="law">조세특례제한법 제133조제1항 · 제70조제4항·제5항</div>' + F.format(6) + '</div>',
+'<div class="c navy pad"><div class="gold serif" style="font-size:40px;font-weight:700">농지 계약 전에</div><div class="h serif" style="font-size:80px;margin-top:20px">먼저 상의하세요</div><div class="cta-p"><img class="ph" src="profile.jpg"><div class="r"><small>지점대표세무사</small><b class="serif">남기원</b><span>세무법인 인성 · 세무 경력 20년</span></div></div><div class="contact"><img src="qr.png"><div><div class="tel">010-7741-4822</div><p>카카오톡 상담: QR을 찍어 주세요<br>평일 09:00~18:00<br>recaro79.github.io</p></div></div><div class="foot"><b>세무법인 인성</b><span>부산 연제구 월드컵대로 153</span></div></div>',
+]
