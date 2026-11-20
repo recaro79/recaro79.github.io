@@ -1,0 +1,83 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+@font-face{font-family:NM;src:url(../fonts/NanumMyeongjo-800.woff2);font-weight:800}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans CJK KR",sans-serif;background:#888}
+.serif{font-family:"Noto Serif CJK KR","Noto Serif KR",serif}
+.c{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:20px}
+.navy{background:#0f2448;color:#fff}
+.cream{background:#f5f1e8;color:#0f2448}
+.gold{color:#c9a961}
+.pad{padding:110px 96px}
+.tag{display:inline-block;border:2px solid #c9a961;color:#c9a961;font-size:30px;font-weight:700;padding:8px 24px;letter-spacing:2px}
+.cream .tag{background:#0f2448;border-color:#0f2448;color:#fff}
+.no{position:absolute;right:96px;top:110px;font-size:34px;font-weight:700;color:#a27b4a;letter-spacing:2px}
+.navy .no{color:#c9a961}
+.h{font-size:76px;line-height:1.3;font-weight:900;letter-spacing:-2px;margin-top:56px}
+.h em{font-style:normal;color:#b8402f}
+.navy .h em{color:#c9a961}
+.sub{font-size:36px;line-height:1.6;margin-top:36px;color:#55606f}
+.navy .sub{color:#d6deeb}
+.rule{width:90px;height:4px;background:#c9a961;margin-top:44px}
+.foot{position:absolute;left:96px;right:96px;bottom:80px;display:flex;justify-content:space-between;align-items:flex-end;font-size:26px;border-top:2px solid #c9a961;padding-top:24px}
+.foot b{font-weight:700}
+.navy .foot{color:#cfd8e8}
+.cream .foot{color:#55606f;border-color:#c9a961}
+.list{margin-top:60px}
+.it{display:flex;gap:30px;align-items:flex-start;padding:30px 0;border-bottom:2px solid #e2d8c3}
+.it .n{flex:none;width:76px;height:76px;border-radius:50%;background:#0f2448;color:#c9a961;font-size:36px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.it b{display:block;font-size:44px;font-weight:900;color:#0f2448}
+.it span{display:block;font-size:30px;color:#55606f;margin-top:8px;line-height:1.5}
+.box{background:#fff;border-radius:18px;padding:44px 48px;margin-top:56px;box-shadow:0 4px 18px rgba(60,45,20,.08)}
+.box .t{font-size:30px;color:#a27b4a;font-weight:700}
+.box .f{font-size:44px;font-weight:900;margin-top:14px;line-height:1.45}
+.law{font-size:24px;color:#8a93a3;margin-top:26px}
+.navy .law{color:#9fb0cc}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:60px}
+.cmp div{border-radius:18px;padding:44px 36px;text-align:center}
+.cmp .a{background:#fff;color:#0f2448}
+.cmp .b{background:#1a3563;color:#fff;border:3px solid #c9a961}
+.cmp small{display:block;font-size:30px;font-weight:700}
+.cmp strong{display:block;font-size:62px;white-space:nowrap;font-weight:900;margin-top:16px}
+.cmp i{display:block;font-style:normal;font-size:26px;margin-top:10px;opacity:.8}
+.diff{margin-top:44px;text-align:center;font-size:44px;font-weight:900}
+.diff span{color:#c9a961}
+.cta-p{display:flex;gap:36px;align-items:center;margin-top:60px}
+.cta-p img.ph{width:200px;height:200px;border-radius:50%;border:5px solid #c9a961;object-fit:cover}
+.cta-p .r small{font-size:26px;letter-spacing:6px;color:#c9a961;font-weight:700}
+.cta-p .r b{font-family:NM!important;display:block;font-size:68px;font-weight:900;letter-spacing:10px;margin-top:4px}
+.cta-p .r span{display:block;font-size:28px;color:#cfd8e8;margin-top:6px}
+.contact{display:flex;gap:40px;align-items:center;margin-top:60px;background:#0b1c3a;border-top:4px solid #c9a961;padding:40px}
+.contact img{width:230px;height:230px;background:#fff;padding:10px;border-radius:10px}
+.contact .tel{font-size:58px;font-weight:900;color:#c9a961}
+.contact p{font-size:28px;color:#d6deeb;line-height:1.7;margin-top:8px}
+.swipe{position:absolute;right:96px;bottom:190px;font-size:28px;color:#c9a961;font-weight:700;letter-spacing:2px}
+.circle{position:absolute;right:-220px;top:-220px;width:760px;height:760px;border-radius:50%;border:3px solid rgba(201,169,97,.25)}
+.s4 .it{padding:22px 0}.s4 .it b{font-size:40px}
+
+/* ===== 밝은 배경 테마 (2026-11-13): 남색 배경 사용 안 함. 클래스 이름(.navy/.cream)은 그대로 쓰되 색만 밝게 ===== */
+.navy{background:linear-gradient(180deg,#fdfaf4 0%,#f3e9d6 100%);color:#0f2448}
+.cream{background:#fffdf8;color:#0f2448}
+.gold{color:#a27b3a}
+.tag{border-color:#c9a961;color:#a27b3a;background:transparent}
+.cream .tag{background:linear-gradient(145deg,#e3c587,#c9a961);border-color:#c9a961;color:#0f2448}
+.navy .no,.no{color:#a27b3a}
+.h em,.navy .h em{color:#a27b3a}
+.navy .sub{color:#3a4456}
+.navy .foot,.cream .foot{color:#55606f;border-color:#c9a961}
+.navy .law{color:#8a93a3}
+.it .n{background:linear-gradient(145deg,#ecd29a,#c9a961);color:#0f2448}
+.navy .it{border-bottom-color:#e6d9bd}
+.cmp .a{background:#fff;color:#0f2448;border:2px solid #eee3cd}
+.cmp .b{background:#fbf3e2;color:#0f2448;border:3px solid #c9a961}
+.diff span{color:#a27b3a}
+.cta-p .r small{color:#a27b3a}
+.cta-p .r b{color:#0f2448}
+.cta-p .r span{color:#3a4456}
+.contact{background:#fff;border:2px solid #eee3cd;border-top:4px solid #c9a961;box-shadow:0 6px 20px rgba(162,123,58,.1)}
+.contact img{border:2px solid #eee3cd}
+.contact .tel{color:#0f2448}
+.contact p{color:#3a4456}
+.swipe{color:#a27b3a}
+.circle{display:none}
+.box{border:2px solid #eee3cd}
+</style></head><body><div id="s1" style="display:block"><div class="c navy pad"><span class="tag">양도소득세·부가가치세</span><div class="gold serif" style="font-size:42px;font-weight:700;margin-top:90px">상가 건물을 파신다면</div><div class="h serif" style="font-size:80px;margin-top:30px">땅값·건물값<br>나누기,<br><em>30% 넘게 다르면</em><br>다시 계산합니다</div><div class="swipe">넘겨 보세요 →</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>2026.11.20 현행 법령 기준</span></div></div></div><div id="s2" style="display:block"><div class="c cream pad"><div class="no">01</div><span class="tag">왜 나눠야 하나</span><div class="h serif" style="font-size:64px">토지는 <em>면세</em>,<br>건물은 <em>부가세 10%</em></div><div class="list" style="margin-top:30px"><div class="it"><div class="n">1</div><div><b>부가가치세</b><span>건물값(실지거래가액)이 공급가액이 됩니다</span></div></div><div class="it"><div class="n">2</div><div><b>양도소득세</b><span>토지·건물 각각 양도가액·취득가액을 계산합니다</span></div></div><div class="it"><div class="n">3</div><div><b>사는 분</b><span>건물값만 감가상각으로 비용이 됩니다</span></div></div></div><div class="law" style="margin-top:20px">부가가치세법 제26조제1항제14호, 제29조제9항</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>2 / 7</span></div></div></div><div id="s3" style="display:block"><div class="c navy pad"><div class="no">02</div><span class="tag">세법이 정한 기준</span><div class="h serif" style="font-size:62px">계약일 현재<br><em>기준시가 비율</em>로</div><div class="list" style="margin-top:30px"><div class="it"><div class="n">1</div><div><b>감정가가 있으면 감정가 비율</b><span>공급시기 직전 과세기간 개시일 ~ 해당 과세기간 종료일 평가분</span></div></div><div class="it"><div class="n">2</div><div><b>기준시가가 없으면</b><span>감정가 → 장부가액(취득가액) 비율</span></div></div><div class="it"><div class="n">3</div><div><b>양도세도 같은 방법</b><span>부가세법 시행령 제64조제1항을 따릅니다</span></div></div></div><div class="law">부가가치세법 시행령 제64조제1항 · 소득세법 시행령 제166조제6항</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>3 / 7</span></div></div></div><div id="s4" style="display:block"><div class="c cream pad"><div class="no">03</div><span class="tag">30% 규칙</span><div class="h serif" style="font-size:60px">계약서 금액이<br><em>30% 이상</em> 다르면</div><div class="box"><div class="t">부가가치세</div><div class="f" style="font-size:38px">비율대로 다시 나눠 과세</div></div><div class="box" style="margin-top:26px"><div class="t">양도소득세</div><div class="f" style="font-size:38px">2025.1.1. 이후 양도분부터 적용</div></div><div class="box" style="margin-top:26px"><div class="t">예외</div><div class="f" style="font-size:34px">다른 법령으로 구분 · 건물 철거 후 토지만 사용</div></div><div class="law">부가세법 제29조제9항제2호 · 소득세법 제100조제3항 · 부칙(2024.12.31.) 제9조</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>4 / 7</span></div></div></div><div id="s5" style="display:block"><div class="c navy pad"><div class="no">04</div><span class="tag">계산 사례</span><div class="h serif" style="font-size:56px">10억 원 상가,<br>건물값을 1억으로 적으면?</div><div class="sub" style="font-size:30px;margin-top:24px">기준시가 토지 6억 · 건물 2억 (가상 사례)</div><div class="cmp"><div class="a"><small>계약서대로</small><strong>1,000만</strong><i>건물 1억 × 10%</i></div><div class="b"><small>다시 나누면</small><strong>2,500만</strong><i>건물 2억 5천만 × 10%</i></div></div><div class="diff">차이 60% → <span>부가세 1,500만 원 + 가산세</span></div><div class="law">가상 사례 · python 검산 · 이 사례는 건물 1억 7,500만 원 초과~3억 2,500만 원 미만이면 30% 미만</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>5 / 7</span></div></div></div><div id="s6" style="display:block"><div class="c cream pad"><div class="no">05</div><span class="tag">꼭 확인</span><div class="h serif" style="font-size:66px">계약 전<br>3가지 점검</div><div class="list" style="margin-top:36px"><div class="it"><div class="n">!</div><div><b>기준시가 확인</b><span>개별공시지가 × 면적, 건물 기준시가</span></div></div><div class="it"><div class="n">!</div><div><b>30% 차이 계산</b><span>계약서 금액과 비율 안분 금액 비교</span></div></div><div class="it"><div class="n">!</div><div><b>감정평가 검토</b><span>시세와 기준시가 비율이 크게 다를 때</span></div></div></div><div class="law">부가가치세법 시행령 제64조 · 소득세법 시행령 제166조제8항</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>6 / 7</span></div></div></div><div id="s7" style="display:block"><div class="c navy pad"><div class="gold serif" style="font-size:40px;font-weight:700">계약서 쓰시기 전에</div><div class="h serif" style="font-size:80px;margin-top:20px">먼저 상의하세요</div><div class="cta-p"><img class="ph" src="profile.jpg"><div class="r"><small>지점대표세무사</small><b class="serif">남기원</b><span>세무법인 인성 · 세무 경력 20년</span></div></div><div class="contact"><img src="qr.png"><div><div class="tel">010-7741-4822</div><p>카카오톡 상담: QR을 찍어 주세요<br>평일 09:00~18:00<br>recaro79.github.io</p></div></div><div class="foot"><b>세무법인 인성</b><span>부산 연제구 월드컵대로 153</span></div></div></div></body></html>
