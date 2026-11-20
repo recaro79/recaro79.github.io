@@ -1,0 +1,106 @@
+NUM = 123
+SLUG = 'house-attached-land-exemption-range'
+CAT = '양도소득세'
+DATE = '2026-11-20'
+TITLE = '마당 넓은 단독주택, 땅 전부가 비과세일까요? — 1세대1주택 주택부수토지는 건물 바닥면적의 5배(수도권 주거지역 3배, 도시지역 밖 10배)까지'
+DESC = '1세대1주택 비과세는 주택과 이에 딸린 토지 중 건물이 정착된 면적에 지역별 배율(수도권 도시지역 주거·상업·공업지역 3배, 수도권 녹지지역·수도권 밖 도시지역 5배, 도시지역 밖 10배)을 곱한 면적까지만 적용됩니다. 넘는 토지는 과세되고 비사업용 토지 세율이 적용될 수 있습니다. 소득세법 제89조, 시행령 제154조제7항·제168조의12 기준. 2026-11-20 현행 법령 기준.'
+OGDESC = '소득세법 제89조제1항제3호, 제104조의3제1항제5호, 같은 법 시행령 제154조제7항, 제168조의12'
+TAGS = ['양도소득세', '1세대1주택', '주택부수토지', '단독주택', '비사업용토지', '부산세무사']
+ALTS = ['주택부수토지 비과세 범위 (표지)', '주택부수토지 비과세 범위 (계산 방법)', '주택부수토지 비과세 범위 (지역별 배율)', '주택부수토지 비과세 범위 (넘는 토지)', '주택부수토지 비과세 범위 (계산 사례)', '주택부수토지 비과세 범위 (점검)', '주택부수토지 비과세 범위 (상담 안내)']
+
+BODY = '''<p>안녕하세요. 세무법인 인성 남기원 세무사입니다.<br>
+아파트와 달리 <b>마당이 넓은 단독주택</b>이나 <b>시골 주택</b>을 파실 때는 한 가지를 더 확인하셔야 합니다. 1세대1주택 비과세는 <b>집과 그 집에 딸린 땅</b>에 적용되지만, 땅은 <b>건물 바닥면적의 몇 배까지</b>만 ‘집에 딸린 땅’으로 인정됩니다. 그보다 넓은 땅은 비과세가 되지 않고, <b>비사업용 토지</b>로 세금이 더 나올 수도 있습니다.</p>
+
+<div class="sum">
+<div class="t">📌 핵심 3줄 요약</div>
+<ol><li>1세대1주택 비과세 대상 땅(주택부수토지)은 <b>건물이 정착된 면적 × 지역별 배율</b> 이내입니다.</li><li>배율은 <b>도시지역 안</b>이면 수도권 주거·상업·공업지역 <b>3배</b>, 수도권 녹지지역과 <b>수도권 밖(부산 등) 5배</b>, <b>도시지역 밖 10배</b>입니다.</li><li>배율을 넘는 땅은 양도세가 과세되며, <b>비사업용 토지</b>로 보아 기본세율에 10%p를 더한 세율이 적용될 수 있습니다.</li></ol>
+<div class="small" style="margin-top:8px">(소득세법 제89조제1항제3호, 제104조의3제1항제5호, 같은 법 시행령 제154조제7항, 제168조의12 / 2026-11-20 현행 법령 기준)</div>
+</div>
+
+{{CARDNEWS}}
+<div class="quote">"부산 단독주택을 팔려고 합니다. 2년 넘게 살았으니 마당까지 전부 비과세 맞지요?"</div>
+
+<h2>사례로 먼저 보겠습니다</h2>
+<p><b>윤○○ 님</b>은 부산 연제구(도시지역, 수도권 밖)의 단독주택 한 채만 가지고 있습니다. 건물이 정착된 면적(바닥면적)은 <b>100㎡</b>, 대지는 <b>700㎡</b>입니다. <b>2년 6개월</b> 보유·거주한 뒤 <b>9억 원</b>(토지 7억 원, 건물 2억 원)에 팔았고, 취득가액은 <b>7억 원</b>(토지 5억 6,000만 원, 건물 1억 4,000만 원)입니다.</p>
+<p class="small">※ 이해를 돕기 위해 구성한 가상 사례입니다. 다른 주택·입주권·분양권은 없고, 필요경비는 없다고 가정했으며, 토지 양도차익은 면적 비율로 나누었습니다. 보유 3년 미만이라 장기보유특별공제는 없습니다.</p>
+
+<h2>1. 비과세되는 땅의 범위는 이렇게 계산합니다</h2>
+<p style="font-size:18px;font-weight:700">👉 비과세 주택부수토지 = 건물이 정착된 면적 × 지역별 배율</p>
+<p>소득세법은 1세대1주택 비과세 대상을 “주택과 이에 딸린 토지로서 <b>건물이 정착된 면적에 지역별로 대통령령으로 정하는 배율을 곱하여 산정한 면적 이내의 토지</b>”로 정하고 있습니다(제89조제1항제3호). 연면적(층수 합계)이 아니라 <b>건물이 땅에 앉은 면적</b>이 기준이라는 점을 꼭 기억하세요.</p>
+
+<h2>2. 지역별 배율</h2>
+<div class="tbl"><table>
+<tr><th>토지가 있는 곳(용도지역)</th><th>배율</th></tr>
+<tr><td>도시지역 안 — 수도권의 <b>주거·상업·공업지역</b></td><td><b>3배</b></td></tr>
+<tr><td>도시지역 안 — 수도권의 <b>녹지지역</b></td><td><b>5배</b></td></tr>
+<tr><td>도시지역 안 — <b>수도권 밖</b>(부산·경남 등)</td><td><b>5배</b></td></tr>
+<tr><td><b>도시지역 밖</b>(관리·농림·자연환경보전지역)</td><td><b>10배</b></td></tr>
+</table></div>
+<p class="small">※ 소득세법 시행령 제154조제7항. 도시지역은 「국토의 계획 및 이용에 관한 법률」 제6조제1호, 수도권은 「수도권정비계획법」 제2조제1호에 따릅니다. 내 땅의 용도지역은 <b>토지이용계획확인서</b>로 확인할 수 있습니다.</p>
+<p class="small">※ 2025.11.28. 개정으로, 주택에 딸린 토지가 공익사업으로 <b>수용</b>되는 경우(사업인정 고시일 전에 취득한 토지)에는 <b>사업인정 고시일 전날</b>의 용도지역으로 배율을 적용합니다(2025.11.28. 이후 양도분부터, 같은 영 부칙 제2조). 수용 때문에 용도지역이 바뀌어 불리해지는 일을 막기 위한 규정입니다.</p>
+
+<h2>3. 배율을 넘는 땅은 어떻게 되나요?</h2>
+<ul class="check">
+<li>✔ 배율을 넘는 부분은 1세대1주택 비과세가 적용되지 않아 <b>양도소득세가 과세</b>됩니다.</li>
+<li>✔ 지방세법상 주택부속토지 중 배율(시행령 제168조의12, 위와 같은 배율)을 넘는 토지는 <b>비사업용 토지</b>에 해당할 수 있습니다(소득세법 제104조의3제1항제5호, 보유기간 중 일정 기간 기준으로 판정). 이 경우 세율은 <b>기본세율 + 10%p(16~55%)</b>입니다(제104조제1항제8호).</li>
+<li>✔ 한 건물에 주택과 가게가 섞인 <b>겸용주택</b>은 주택 면적이 더 클 때만 전부를 주택으로 보고, 아니면 땅도 면적 비율로 나눕니다(시행령 제154조제3항·제4항, <a href="/column/33-mixed-use-house-exemption.html">칼럼 33</a> 참고).</li>
+<li>✔ 양도가액이 <b>12억 원을 넘는 고가주택</b>은 배율 이내 땅이라도 12억 원 초과분 비율만큼은 과세됩니다(<a href="/column/36-long-term-holding-deduction-80.html">칼럼 36</a> 참고).</li>
+</ul>
+
+<h2>4. 윤○○ 님 사례 계산</h2>
+<div class="tbl"><table>
+<tr><th>구분</th><th class="r">금액·면적</th></tr>
+<tr><td>비과세 한도 면적 (100㎡ × 5배)</td><td class="r">500㎡</td></tr>
+<tr><td>배율 초과 면적 (700㎡ − 500㎡)</td><td class="r">200㎡</td></tr>
+<tr><td>토지 양도차익 (7억 − 5억 6,000만)</td><td class="r">140,000,000원</td></tr>
+<tr><td>건물 양도차익 + 500㎡ 토지분</td><td class="r">비과세</td></tr>
+<tr><td>초과 토지 양도차익 (1억 4,000만 × 200/700)</td><td class="r">40,000,000원</td></tr>
+<tr><td>양도소득 기본공제</td><td class="r">−2,500,000원</td></tr>
+<tr><td>과세표준</td><td class="r">37,500,000원</td></tr>
+<tr><td>비사업용 토지 세율 (224만 원 + 1,400만 원 초과액의 25%)</td><td class="r">8,115,000원</td></tr>
+<tr><td>지방소득세(10%)</td><td class="r">811,500원</td></tr>
+<tr><td><b>합계</b></td><td class="r"><b>8,926,500원</b></td></tr>
+</table></div>
+<p>2년 넘게 산 1주택이라도 <b>마당 200㎡</b> 때문에 <b>약 893만 원</b>의 세금이 나옵니다. 만약 이 집이 도시지역 밖(10배 적용, 한도 1,000㎡)에 있었다면 대지 700㎡ 전부가 비과세 범위 안에 들어갑니다.</p>
+<p class="small">※ 가상 사례이며 python으로 계산·검산했습니다. 실제로는 필요경비 안분, 장기보유특별공제(보유 3년 이상), 비사업용 토지 판정 기간 등에 따라 결과가 달라집니다.</p>
+
+<h2>5. 이렇게 점검하세요</h2>
+<ul class="check">
+<li>☐ 건축물대장에서 <b>건물이 정착된 면적(건축면적)</b>을 확인했다.</li>
+<li>☐ 토지이용계획확인서로 <b>도시지역 여부와 용도지역</b>(주거·녹지 등)을 확인했다.</li>
+<li>☐ 대지 면적이 <b>바닥면적 × 배율</b>을 넘는지 계산했다.</li>
+<li>☐ 넘는다면, 넘는 땅을 <b>분할해 따로 처분</b>하거나 증축 등 다른 방법이 있는지 미리 상담했다.</li>
+<li>☐ 가게가 섞인 겸용주택이거나 양도가액이 12억 원을 넘는지도 확인했다.</li>
+</ul>
+<p>단독주택은 아파트보다 확인할 것이 많습니다. 계약 전에 서류 몇 장만 보여 주시면 비과세 범위를 미리 계산해 드리겠습니다.</p>
+
+<h2>상담 때 준비하시면 좋은 자료</h2>
+<div class="tbl"><table>
+<tr><th>자료</th><th>확인 내용</th></tr>
+<tr><td>건축물대장</td><td>건축면적(바닥면적), 주택·근린생활시설 용도</td></tr>
+<tr><td>토지대장·토지이용계획확인서</td><td>대지 면적, 도시지역·용도지역</td></tr>
+<tr><td>매매계약서(살 때·팔 때)</td><td>토지·건물 가액 구분, 보유기간</td></tr>
+<tr><td>주민등록표 등본</td><td>거주기간, 세대 구성</td></tr>
+<tr><td>필요경비 영수증</td><td>취득세·중개수수료·자본적 지출</td></tr>
+</table></div>
+<p class="small">※ 상담 요청 시 주민등록번호, 계좌번호, 서류 원본은 문자나 카카오톡으로 보내지 않으셔도 됩니다. 상담 때 필요한 자료를 따로 안내해 드리겠습니다.</p>
+<div class="cta">
+<p><b>📞 상담 안내</b></p>
+<p>세무법인 인성 남기원 세무사</p>
+<p>부산광역시 연제구 월드컵대로 153 연희빌딩 3층</p>
+<p>평일 09:00~18:00 · ☎ 010-7741-4822 · recaro798@gmail.com</p>
+<p style="font-size:14px;opacity:.9">그 외 시간에는 카카오톡 채널이나 문자로 상담 요청을 남겨 주시면, 상담 가능한 시간에 연락드리겠습니다.</p>
+<div class="btns"><a class="btn kakao" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카카오톡 상담</a><a class="btn gold" href="tel:01077414822">☎ 전화 상담</a><a class="btn line" href="sms:01077414822">문자 상담</a></div>
+</div>
+'''
+
+F = '<div class="foot"><b>세무법인 인성 남기원 세무사</b><span>{} / 7</span></div>'
+CARDS = [
+'<div class="c navy pad"><span class="tag">양도소득세</span><div class="gold serif" style="font-size:42px;font-weight:700;margin-top:90px">마당 넓은 단독주택을 파신다면</div><div class="h serif" style="font-size:80px;margin-top:30px">땅 전부가<br><em>비과세</em>일까요?</div><div class="swipe">넘겨 보세요 →</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>2026.11.20 현행 법령 기준</span></div></div>',
+'<div class="c cream pad"><div class="no">01</div><span class="tag">계산 방법</span><div class="h serif" style="font-size:60px">비과세 땅은<br><em>바닥면적 × 배율</em></div><div class="box"><div class="t">주택부수토지 비과세 한도</div><div class="f" style="font-size:40px">건물이 정착된 면적 × 지역별 배율</div></div><div class="box" style="margin-top:26px"><div class="t">주의</div><div class="f" style="font-size:36px">연면적(층수 합계)이 아니라<br>땅에 앉은 면적 기준</div></div><div class="law">소득세법 제89조제1항제3호</div>' + F.format(2) + '</div>',
+'<div class="c navy pad"><div class="no">02</div><span class="tag">지역별 배율</span><div class="h serif" style="font-size:60px">어디에 있느냐에 따라<br><em>3배·5배·10배</em></div><div class="list" style="margin-top:24px"><div class="it"><div class="n">3</div><div><b>수도권 주거·상업·공업지역</b><span>도시지역 안</span></div></div><div class="it"><div class="n">5</div><div><b>수도권 녹지지역 · 수도권 밖</b><span>부산 등 도시지역 안</span></div></div><div class="it"><div class="n">10</div><div><b>도시지역 밖</b><span>관리·농림·자연환경보전지역</span></div></div></div><div class="law">소득세법 시행령 제154조제7항</div>' + F.format(3) + '</div>',
+'<div class="c cream pad"><div class="no">03</div><span class="tag">넘는 땅</span><div class="h serif" style="font-size:58px">배율을 넘는 땅은<br><em>과세</em>됩니다</div><div class="list" style="margin-top:30px"><div class="it"><div class="n">!</div><div><b>1세대1주택 비과세 제외</b><span>넘는 면적만큼 양도세 과세</span></div></div><div class="it"><div class="n">!</div><div><b>비사업용 토지</b><span>기본세율 + 10%p (16~55%)</span></div></div><div class="it"><div class="n">!</div><div><b>12억 원 초과 고가주택</b><span>초과분 비율만큼 별도 과세</span></div></div></div><div class="law">소득세법 제104조의3제1항제5호 · 제104조제1항제8호</div>' + F.format(4) + '</div>',
+'<div class="c navy pad"><div class="no">04</div><span class="tag">계산 사례</span><div class="h serif" style="font-size:52px">부산 단독주택<br>바닥 100㎡ · 대지 700㎡</div><div class="sub" style="font-size:28px;margin-top:22px">2년 6개월 보유·거주 · 토지 차익 1억 4,000만 (가상 사례)</div><div class="cmp"><div class="a"><small>비과세 한도</small><strong>500㎡</strong><i>100㎡ × 5배</i></div><div class="b"><small>초과 200㎡ 세금</small><strong>약 893만</strong><i>지방소득세 포함</i></div></div><div class="diff">도시지역 밖이었다면 <span>전부 비과세</span></div><div class="law">가상 사례 · python 검산 · 면적 비율 안분</div>' + F.format(5) + '</div>',
+'<div class="c cream pad"><div class="no">05</div><span class="tag">꼭 확인</span><div class="h serif" style="font-size:62px">팔기 전<br>3가지 점검</div><div class="list" style="margin-top:36px"><div class="it"><div class="n">!</div><div><b>건축물대장</b><span>건축면적(바닥면적) 확인</span></div></div><div class="it"><div class="n">!</div><div><b>토지이용계획확인서</b><span>도시지역·용도지역 확인</span></div></div><div class="it"><div class="n">!</div><div><b>초과 면적 계산</b><span>대지 − 바닥면적 × 배율</span></div></div></div><div class="law">소득세법 시행령 제154조제7항 · 제168조의12</div>' + F.format(6) + '</div>',
+'<div class="c navy pad"><div class="gold serif" style="font-size:40px;font-weight:700">단독주택 계약 전에</div><div class="h serif" style="font-size:80px;margin-top:20px">먼저 상의하세요</div><div class="cta-p"><img class="ph" src="profile.jpg"><div class="r"><small>지점대표세무사</small><b class="serif">남기원</b><span>세무법인 인성 · 세무 경력 20년</span></div></div><div class="contact"><img src="qr.png"><div><div class="tel">010-7741-4822</div><p>카카오톡 상담: QR을 찍어 주세요<br>평일 09:00~18:00<br>recaro79.github.io</p></div></div><div class="foot"><b>세무법인 인성</b><span>부산 연제구 월드컵대로 153</span></div></div>',
+]
