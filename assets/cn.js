@@ -49,7 +49,7 @@
   var cl=document.querySelector('.col-list[data-filter]');
   if(cl){
     var cards=[].slice.call(cl.querySelectorAll('.col-card'));var page=+(cl.getAttribute('data-filter')||12);
-    var tabs=[['전체',''],['양도소득세','양도'],['상속세','상속'],['증여세','증여'],['종합소득세','종합소득'],['법인세','법인'],['부가가치세·기타','부가|취득']];
+    var tabs=[['전체',''],['양도소득세','양도'],['상속세','상속'],['증여세','증여'],['종합소득세','종합소득'],['법인세','법인'],['부가가치세·기타','부가|취득|종합부동산']];
     var cur='',shown=page,q='',idx=null,loading=false;
     /* 검색창: 제목·세목은 바로, 본문은 /assets/search.json 색인으로 찾음 */
     var sb=document.createElement('div');sb.className='csearch';
