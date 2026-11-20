@@ -1,0 +1,113 @@
+NUM = 138
+SLUG = 'public-foundation-donation-gift'
+CAT = '증여세'
+DATE = '2026-11-20'
+TITLE = '장학재단·공익법인에 재산을 기부하신다면 — 공익법인이 받은 재산은 증여세 없음, 다만 회사 주식은 10%(20%·5%) 한도와 3년 안 공익 사용 등 사후관리'
+DESC = '공익법인등이 출연받은 재산은 증여세 과세가액에 산입하지 않습니다. 다만 내국법인 의결권 있는 주식은 기존 보유분 등과 합쳐 발행주식총수의 10%(의결권 미행사 자선·장학·사회복지 법인 20%, 대기업집단 관련·요건 미충족 5%)를 넘는 부분에 증여세가 나오고, 3년 안 공익목적 미사용·출연자 가족 사용 등은 즉시 증여세 대상입니다. 상속세 및 증여세법 제48조, 제16조 기준. 2026-11-20 현행 법령 기준.'
+OGDESC = '상속세 및 증여세법 제48조제1항·제2항·제3항·제5항·제8항, 제16조제2항·제3항, 시행령 제12조'
+TAGS = ['증여세', '공익법인', '장학재단', '주식출연', '기부', '부산세무사']
+ALTS = ['공익법인 출연 증여세 (표지)', '공익법인 출연 증여세 (원칙)', '공익법인 출연 증여세 (주식 한도)', '공익법인 출연 증여세 (사후관리)', '공익법인 출연 증여세 (계산 사례)', '공익법인 출연 증여세 (점검)', '공익법인 출연 증여세 (상담 안내)']
+
+BODY = '''<p>안녕하세요. 세무법인 인성 남기원 세무사입니다.<br>
+“평생 모은 재산 일부로 장학재단을 만들고 싶은데, 재단이 세금을 내야 하나요?” 이런 뜻깊은 상담을 받을 때가 있습니다. 공익법인이 출연(기부)받은 재산은 원칙적으로 <b>증여세가 없습니다</b>. 다만 <b>회사 주식</b>을 출연할 때의 비율 한도와, 출연 뒤 지켜야 할 <b>사후관리</b> 규정이 있어 미리 알고 시작하셔야 합니다.</p>
+
+<div class="sum">
+<div class="t">📌 핵심 3줄 요약</div>
+<ol><li>공익법인등이 출연받은 재산은 <b>증여세 과세가액에 넣지 않습니다</b>(증여세 없음).</li><li>다만 내국법인의 <b>의결권 있는 주식</b>은 이미 가진 주식 등과 합쳐 발행주식총수의 <b>10%</b>(의결권 미행사·자선·장학·사회복지 법인 <b>20%</b>, 대기업집단 관련·요건 미충족 법인 <b>5%</b>)를 넘는 부분에 증여세가 나옵니다.</li><li>출연받은 재산을 <b>3년 안에 공익목적사업에 쓰지 않거나</b> 다른 용도로 쓰거나, <b>출연자 가족에게 무상으로 쓰게 하면</b> 그때 증여세가 다시 부과됩니다.</li></ol>
+<div class="small" style="margin-top:8px">(상속세 및 증여세법 제48조, 제16조제2항·제3항 / 2026-11-20 현행 법령 기준)</div>
+</div>
+
+{{CARDNEWS}}
+<div class="quote">"제가 대주주인 회사 주식 15%를 장학재단에 기부하려고 합니다. 재단은 세금이 없는 것 맞지요?"</div>
+
+<h2>사례로 먼저 보겠습니다</h2>
+<p><b>정○○ 님</b>은 비상장 내국법인 A사(의결권 있는 발행주식 10만 주)의 주식 <b>1만 5천 주(15%)</b>를 장학재단(공익법인)에 출연하려 합니다. 재단은 A사 주식을 갖고 있지 않고, 다른 공익법인에 출연한 A사 주식도 없습니다. A사 주식의 세법상 평가액은 1주 <b>20만 원</b>으로 가정합니다.</p>
+<p class="small">※ 이해를 돕기 위해 구성한 가상 사례입니다.</p>
+
+<h2>1. 원칙 — 공익법인이 받은 재산은 증여세가 없습니다</h2>
+<p>종교·자선·학술·사회복지 등 공익사업을 하는 <b>공익법인등</b>(상속세 및 증여세법 시행령 제12조에서 범위를 정함)이 출연받은 재산의 가액은 증여세 과세가액에 산입하지 않습니다(상속세 및 증여세법 제48조제1항 본문). 현금·부동산 등은 비율 제한 없이 이 원칙이 적용됩니다.</p>
+<p class="small">※ 재산을 남기시며 상속세 신고기한까지 공익법인에 출연하는 경우는 <a href="/column/80-public-interest-donation-inheritance.html">칼럼 80</a>, 기부하신 분의 소득세 기부금 세액공제는 <a href="/column/78-donation-tax-credit.html">칼럼 78</a>을 참고해 주세요.</p>
+
+<h2>2. 주식을 출연할 때의 비율 한도</h2>
+<p>내국법인의 <b>의결권 있는 주식</b>을 출연받은 경우에는, 출연받은 주식에 아래 주식을 합한 것이 그 법인 발행주식총수(자기주식 제외)의 일정 비율을 넘으면 <b>넘는 부분</b>을 증여세 과세가액에 넣습니다(제48조제1항 단서).</p>
+<div class="tbl"><table>
+<tr><th>합산하는 주식</th></tr>
+<tr><td>출연 당시 그 공익법인이 이미 갖고 있던 같은 회사 주식</td></tr>
+<tr><td>출연자와 특수관계인이 <b>다른 공익법인</b>에 출연한 같은 회사 주식</td></tr>
+<tr><td>출연자와 특수관계인에게 재산을 출연받은 다른 공익법인이 가진 같은 회사 주식</td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>공익법인 구분</th><th>한도 비율</th></tr>
+<tr><td>일반 공익법인</td><td><b>10%</b></td></tr>
+<tr><td>출연받은 주식의 <b>의결권을 행사하지 않고</b>, <b>자선·장학·사회복지</b>를 목적으로 하는 공익법인</td><td><b>20%</b></td></tr>
+<tr><td>상호출자제한기업집단과 특수관계에 있는 공익법인</td><td><b>5%</b></td></tr>
+<tr><td>제48조제11항의 요건(운용소득 사용 비율, 이사 구성 등)을 충족하지 못하는 공익법인</td><td><b>5%</b></td></tr>
+</table></div>
+<p class="small">※ 근거: 제16조제2항제2호(제48조제1항에서 준용). 출연자와 특수관계 없는 회사 주식을 주무관청이 인정해 출연하는 경우, 요건을 갖춘 공익법인이 초과분을 3년 안에 매각하는 경우 등 제16조제3항의 예외가 있습니다. 20%를 적용받은 공익법인이 나중에 의결권을 행사하면 즉시 증여세가 부과됩니다(제48조제2항제6호).</p>
+
+<h2>3. 출연 뒤 사후관리 — 이런 경우 증여세가 다시 나옵니다</h2>
+<div class="tbl"><table>
+<tr><th>사유</th><th>결과</th><th>근거(제48조)</th></tr>
+<tr><td>출연받은 재산을 공익목적 외에 쓰거나, <b>3년 안에</b> 직접 공익목적사업 등에 쓰지 않거나, 3년 뒤 계속 쓰지 않는 경우</td><td>즉시 증여세</td><td>제2항제1호</td></tr>
+<tr><td>출연재산·매각대금으로 주식을 사서 비율 한도를 넘는 경우</td><td>즉시 증여세</td><td>제2항제2호</td></tr>
+<tr><td>수익용 재산의 운용소득을 공익목적 외에 쓴 경우</td><td>즉시 증여세</td><td>제2항제3호</td></tr>
+<tr><td>재산을 팔고 그 대금을 <b>3년이 지날 때까지</b> 정해진 대로 쓰지 않은 경우</td><td>즉시 증여세</td><td>제2항제4호</td></tr>
+<tr><td>출연재산을 <b>출연자와 그 친족</b> 등에게 임대·대여·무상 사용하게 한 경우</td><td>즉시 증여세</td><td>제3항</td></tr>
+<tr><td>출연자·특수관계인이 이사 수의 <b>5분의 1</b>을 넘게 이사가 되거나 임직원이 된 경우</td><td>가산세</td><td>제8항</td></tr>
+<tr><td>운용소득·매각대금을 기준금액에 못 미치게 쓰거나, 의무지출 기준에 못 미친 경우</td><td>가산세</td><td>제2항제5호·제7호</td></tr>
+</table></div>
+<p>또한 재산을 출연받은 공익법인은 <b>출연재산의 사용계획과 진도에 관한 보고서</b>를 관할 세무서장에게 제출해야 합니다(제48조제5항).</p>
+
+<h2>4. 정○○ 님 사례 계산</h2>
+<div class="tbl"><table>
+<tr><th>구분</th><th>일반 공익법인 (10%)</th><th>의결권 미행사 장학재단 (20%)</th></tr>
+<tr><td>출연 주식</td><td>15,000주 (15%)</td><td>15,000주 (15%)</td></tr>
+<tr><td>한도</td><td>10,000주 (10%)</td><td>20,000주 (20%)</td></tr>
+<tr><td>초과 주식</td><td><b>5,000주</b></td><td>0주</td></tr>
+<tr><td>증여세 과세가액 (1주 20만 원)</td><td><b>10억 원</b></td><td>0원</td></tr>
+<tr><td>증여세 산출세액</td><td>2억 4,000만 원</td><td>0원</td></tr>
+<tr><td>신고세액공제 3% 후</td><td><b>2억 3,280만 원</b></td><td><b>0원</b></td></tr>
+</table></div>
+<p>같은 15%라도 재단이 <b>의결권을 행사하지 않는 장학재단</b>이라면 증여세가 없지만, 일반 공익법인이라면 초과분 5%에 대해 재단이 약 <b>2억 3천만 원</b>의 증여세를 내야 합니다. 출연 전에 재단의 형태와 비율을 먼저 설계하는 것이 중요합니다.</p>
+<p class="small">※ 가상 사례이며 python으로 계산·검산했습니다. 공익법인(법인)은 증여재산공제가 없는 것으로 보고, 세율은 제26조(제56조에서 준용), 신고세액공제는 제69조제2항을 적용했습니다. 실제 주식 평가(<a href="/column/63-unlisted-stock-valuation.html">칼럼 63</a>)와 초과 가액 계산은 시행령에 따라 달라질 수 있습니다.</p>
+
+<h2>5. 이렇게 점검하세요</h2>
+<ul class="check">
+<li>☐ 받는 곳이 세법상 <b>공익법인등</b>(시행령 제12조)에 해당하는지 확인했다.</li>
+<li>☐ 주식이라면 이미 가진 주식·다른 공익법인 보유분까지 합쳐 <b>5%·10%·20%</b> 한도를 계산했다.</li>
+<li>☐ 20%를 적용받으려면 <b>의결권 미행사</b>와 <b>자선·장학·사회복지 목적</b>을 계속 지켜야 함을 알고 있다.</li>
+<li>☐ 출연재산을 <b>3년 안에</b> 공익목적사업에 쓰는 계획을 세우고, 사용계획·진도 보고서를 제출한다.</li>
+<li>☐ 출연자 가족이 재단 재산을 쓰거나, 이사 수의 <b>5분의 1</b>을 넘게 이사로 들어가지 않도록 했다.</li>
+</ul>
+<p>좋은 뜻으로 시작한 기부가 세금 문제로 상처받지 않도록, 출연 전부터 함께 설계해 드리겠습니다. 편하게 상의해 주세요.</p>
+
+<h2>상담 때 준비하시면 좋은 자료</h2>
+<div class="tbl"><table>
+<tr><th>자료</th><th>확인 내용</th></tr>
+<tr><td>공익법인 설립허가증·정관</td><td>공익법인 해당 여부, 목적사업(장학·자선·사회복지)</td></tr>
+<tr><td>출연할 재산 목록</td><td>부동산·현금·주식 구분, 평가</td></tr>
+<tr><td>주주명부(주식 출연 시)</td><td>발행주식총수, 공익법인·특수관계 공익법인 보유 주식</td></tr>
+<tr><td>이사회 구성 명단</td><td>출연자·특수관계인 이사 비율(5분의 1)</td></tr>
+<tr><td>재산 사용 계획</td><td>3년 안 공익목적 사용, 보고서 제출</td></tr>
+</table></div>
+<p class="small">※ 상담 요청 시 주민등록번호, 계좌번호, 서류 원본은 문자나 카카오톡으로 보내지 않으셔도 됩니다. 상담 때 필요한 자료를 따로 안내해 드리겠습니다.</p>
+<div class="cta">
+<p><b>📞 상담 안내</b></p>
+<p>세무법인 인성 남기원 세무사</p>
+<p>부산광역시 연제구 월드컵대로 153 연희빌딩 3층</p>
+<p>평일 09:00~18:00 · ☎ 010-7741-4822 · recaro798@gmail.com</p>
+<p style="font-size:14px;opacity:.9">그 외 시간에는 카카오톡 채널이나 문자로 상담 요청을 남겨 주시면, 상담 가능한 시간에 연락드리겠습니다.</p>
+<div class="btns"><a class="btn kakao" href="https://pf.kakao.com/_wdZNX/chat" target="_blank" rel="noopener">💬 카카오톡 상담</a><a class="btn gold" href="tel:01077414822">☎ 전화 상담</a><a class="btn line" href="sms:01077414822">문자 상담</a></div>
+</div>
+'''
+
+F = '<div class="foot"><b>세무법인 인성 남기원 세무사</b><span>{} / 7</span></div>'
+CARDS = [
+'<div class="c navy pad"><span class="tag">증여세</span><div class="gold serif" style="font-size:42px;font-weight:700;margin-top:90px">장학재단·공익법인에 기부하신다면</div><div class="h serif" style="font-size:76px;margin-top:30px">재단은<br><em>증여세</em>가<br>없을까요?</div><div class="swipe">넘겨 보세요 →</div><div class="foot"><b>세무법인 인성 남기원 세무사</b><span>2026.11.20 현행 법령 기준</span></div></div>',
+'<div class="c cream pad"><div class="no">01</div><span class="tag">원칙</span><div class="h serif" style="font-size:60px">공익법인이 받은 재산<br><em>증여세 없음</em></div><div class="list" style="margin-top:30px"><div class="it"><div class="n">1</div><div><b>과세가액 불산입</b><span>현금·부동산은 비율 제한 없음</span></div></div><div class="it"><div class="n">2</div><div><b>공익법인등</b><span>종교·자선·학술·사회복지 등</span></div></div><div class="it"><div class="n">3</div><div><b>예외: 주식</b><span>비율을 넘는 부분은 과세</span></div></div></div><div class="law" style="margin-top:20px">상증법 제48조제1항 · 시행령 제12조</div>' + F.format(2) + '</div>',
+'<div class="c navy pad"><div class="no">02</div><span class="tag">주식 한도</span><div class="h serif" style="font-size:60px">발행주식의<br><em>10% · 20% · 5%</em></div><div class="list" style="margin-top:24px"><div class="it"><div class="n">1</div><div><b>일반 공익법인 10%</b><span>이미 가진 주식 등과 합산</span></div></div><div class="it"><div class="n">2</div><div><b>20%</b><span>의결권 미행사 + 자선·장학·사회복지</span></div></div><div class="it"><div class="n">3</div><div><b>5%</b><span>대기업집단 관련 · 요건 미충족</span></div></div></div><div class="law">상증법 제48조제1항 단서 · 제16조제2항</div>' + F.format(3) + '</div>',
+'<div class="c cream pad"><div class="no">03</div><span class="tag">사후관리</span><div class="h serif" style="font-size:58px">이러면 증여세가<br><em>다시 나옵니다</em></div><div class="box"><div class="t">사용 의무</div><div class="f" style="font-size:34px">3년 안에 공익목적사업에 사용<br>매각대금도 3년 안 사용</div></div><div class="box" style="margin-top:26px"><div class="t">금지</div><div class="f" style="font-size:34px">출연자·친족에게 무상 사용·임대</div></div><div class="law">상증법 제48조제2항·제3항</div>' + F.format(4) + '</div>',
+'<div class="c navy pad"><div class="no">04</div><span class="tag">계산 사례</span><div class="h serif" style="font-size:52px">A사 주식 15%<br>장학재단에 출연</div><div class="sub" style="font-size:28px;margin-top:22px">1주 20만 원 · 발행 10만 주 (가상 사례)</div><div class="cmp"><div class="a"><small>일반 (10%)</small><strong>2억 3,280만</strong><i>초과 5% 과세</i></div><div class="b"><small>의결권 미행사 (20%)</small><strong>0원</strong><i>한도 이내</i></div></div><div class="diff">재단 형태에 따라 <span>2억 원 넘게 차이</span></div><div class="law">가상 사례 · python 검산</div>' + F.format(5) + '</div>',
+'<div class="c cream pad"><div class="no">05</div><span class="tag">꼭 확인</span><div class="h serif" style="font-size:62px">출연 전<br>3가지 점검</div><div class="list" style="margin-top:36px"><div class="it"><div class="n">!</div><div><b>공익법인 해당 여부</b><span>시행령 제12조 범위</span></div></div><div class="it"><div class="n">!</div><div><b>주식 비율 합산</b><span>다른 공익법인 보유분까지</span></div></div><div class="it"><div class="n">!</div><div><b>이사 5분의 1</b><span>출연자·특수관계인 이사 제한</span></div></div></div><div class="law">상증법 제48조제5항·제8항</div>' + F.format(6) + '</div>',
+'<div class="c navy pad"><div class="gold serif" style="font-size:40px;font-weight:700">뜻깊은 기부, 세금까지 꼼꼼히</div><div class="h serif" style="font-size:80px;margin-top:20px">먼저 상의하세요</div><div class="cta-p"><img class="ph" src="profile.jpg"><div class="r"><small>지점대표세무사</small><b class="serif">남기원</b><span>세무법인 인성 · 세무 경력 20년</span></div></div><div class="contact"><img src="qr.png"><div><div class="tel">010-7741-4822</div><p>카카오톡 상담: QR을 찍어 주세요<br>평일 09:00~18:00<br>recaro79.github.io</p></div></div><div class="foot"><b>세무법인 인성</b><span>부산 연제구 월드컵대로 153</span></div></div>',
+]
