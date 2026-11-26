@@ -7,13 +7,13 @@ from engine_css import CSS
 W, H, FPS = 1080, 1920, 30
 D = os.path.dirname(os.path.abspath(__file__))
 
-def head():
-    return '<div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>'
+def head(ver='2026 Ver.'):
+    return f'<div class="ver">{ver}</div><div class="brand"><img src="mark.png">세무법인 인성</div>'
 
-def page(cls, inner, start, total):
+def page(cls, inner, start, total, ver='2026 Ver.'):
     bar = f'<div class="top"><i id="bar" style="width:{start/total*100:.2f}%"></i></div>'
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>
-<div class="sc {cls}">{bar}{head()}{inner}</div><script>window.T0={start};window.TT={total};</script></body></html>"""
+<div class="sc {cls}">{bar}{head(ver)}{inner}</div><script>window.T0={start};window.TT={total};</script></body></html>"""
 
 SEEK = "(t=>{document.getAnimations().forEach(a=>a.currentTime=t*1000);document.getElementById('bar').style.width=((T0+t)/TT*100)+'%'})"
 
@@ -22,7 +22,7 @@ def render(spec_path, preview=False):
     name, scenes, basis = S["NAME"], S["SCENES"], S["BASIS"]
     # 마지막 장면에 근거 문구 넣기
     dur, cls, inner, acc = scenes[-1]
-    scenes[-1] = (dur, cls, inner + f'<div class="abs up" style="left:56px;right:56px;top:1615px;text-align:center;font-size:24px;font-weight:600;opacity:.75;animation-delay:1.2s">근거: {basis}</div>', acc)
+    scenes[-1] = (dur, cls, inner + f'<div class="abs up" style="left:56px;right:56px;top:1615px;text-align:center;font-size:24px;font-weight:600;opacity:.75;animation-delay:1.2s">{S.get("BASIS_LABEL", "근거")}: {basis}</div>', acc)
     od = os.path.join(D, "out", name); os.makedirs(od, exist_ok=True)
     total = sum(s[0] for s in scenes)
     starts = [sum(s[0] for s in scenes[:k]) for k in range(len(scenes))]
@@ -32,7 +32,7 @@ def render(spec_path, preview=False):
         pg = b.new_page(viewport={"width": W, "height": H})
         for i, (dur, cls, inner, acc) in enumerate(scenes, 1):
             p = os.path.join(D, f"_{name}_{i}.html")
-            open(p, "w", encoding="utf-8").write(page(cls, inner, starts[i-1], total))
+            open(p, "w", encoding="utf-8").write(page(cls, inner, starts[i-1], total, S.get('VER', '2026 Ver.')))
             pg.goto("file://" + p); pg.wait_for_timeout(300)
             pg.evaluate("document.getAnimations().forEach(a=>a.pause())")
             if preview:

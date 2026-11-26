@@ -1,14 +1,14 @@
 # 쇼츠 장면 부품 — 각 함수는 (길이초, 배경class, HTML, [강조음 시각]) 을 돌려줍니다.
 def d(t): return f"animation-delay:{t}s"
 
-def cover(kick, lines, series, char, bg="bg-sunset", glow="#ffd08a"):
+def cover(kick, lines, series, char, bg="bg-sunset", glow="#ffd08a", anim="bob"):
     t = 0.35
     ls = ""
     for ln in lines:
         ls += f'<div class="title pop" style="{d(t)}">{ln}</div>'; t += 0.35
     html = f"""
 <div class="abs" style="left:0;right:0;top:0;height:1000px;background:radial-gradient(ellipse at 50% 55%,{glow}88,transparent 60%)"></div>
-<img class="ch bob" src="ch/{char}.svg" style="left:190px;top:260px;width:700px">
+<img class="ch {anim}" src="ch/{char}.svg" style="left:190px;top:260px;width:700px">
 <div class="abs" style="left:0;right:0;top:820px;height:1100px;background:linear-gradient(to bottom,rgba(20,14,40,0),rgba(20,14,40,.9) 30%,#140e28)"></div>
 <div class="abs" style="left:60px;right:60px;top:{1060 - 70*(len(lines)-3)}px">
  <div class="kick hl up" style="{d(.1)}">{kick}</div><div style="margin-top:24px"></div>{ls}
@@ -72,7 +72,7 @@ def compare(kick, title, left, op, right, tot_label, tot_big, tot_sub, warn, cha
 <div class="abs up" style="left:56px;width:600px;top:1230px;font-size:36px;font-weight:700;line-height:1.5;{d(3.3)}">{warn}</div>"""
     return (6.0, bg, html, [2.1])
 
-def ending(kick, title, bg="bg-navy", char="smile-wave"):
+def ending(kick, title, bg="bg-navy", char="smile-wave", sub="구독하고 <span class='hl'>절세 팁</span> 매일 받아 가세요!"):
     html = f"""
 <div class="abs" style="left:0;right:0;top:200px;text-align:center"><div class="kick hl up" style="{d(.05)}">{kick}</div><div class="title pop" style="font-size:96px;margin-top:10px;{d(.3)}">{title}</div></div>
 <img class="ch bob" src="ch/{char}.svg" style="left:330px;top:520px;width:420px">
@@ -81,5 +81,5 @@ def ending(kick, title, bg="bg-navy", char="smile-wave"):
  <div style="margin-top:28px;border-top:2px solid #eee3cd;padding-top:26px;font-size:62px;font-weight:900">010-7741-4822</div>
  <div style="font-size:34px;font-weight:700;color:#5a6a80;margin-top:6px">카카오톡 상담 · 평일 09:00~18:00</div>
 </div>
-<div class="abs pop" style="left:56px;right:56px;top:1530px;text-align:center;font-size:46px;font-weight:900;{d(1.8)}">구독하고 <span class="hl">절세 팁</span> 매일 받아 가세요!</div>"""
+<div class="abs pop" style="left:56px;right:56px;top:1530px;text-align:center;font-size:46px;font-weight:900;{d(1.8)}">{sub}</div>"""
     return (5.2, bg, html, [0.3])

@@ -11,3 +11,6 @@
   - 영상: `assets/shorts/NNN.mp4` (번호 3자리, 720×1280, `ffmpeg -vf scale=720:1280 -c:v libx264 -crf 28 -preset veryfast -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 96k`, 1편 약 0.7~1.1MB), 표지 `assets/shorts/NNN.jpg` (2.9초 화면, 540×960, `-q:v 4`).
   - 목록: `assets/shorts/list.json`에 {id, cat, title, basis, date, col(관련 칼럼 주소, 없으면 "")} — 새 주의 7편을 맨 앞에 1→7 순서로 넣습니다. 홈(최근 4편)과 /shorts/ 페이지는 `assets/shorts.js`가 자동으로 그립니다. `sitemap.xml`의 /shorts/ lastmod 갱신.
   - 용량: 깃허브 홈페이지는 저장소 권장 1GB·게시 사이트 1GB 한도입니다. 2026-11-26 기준 약 135MB(카드뉴스 이미지 114MB). 매 회차 `du -sh --exclude=.git .`로 확인하고 **700MB를 넘으면 기원님께 알립니다**(대안: 쇼츠를 유튜브 링크로 바꾸기, 영상·이미지를 별도 저장소로 나누기).
+- **러닝 쇼츠(2026-11-26 기원님 요청, 가끔)**: 기원님이 원고·자료를 주시면 '러닝 series'로 만듭니다. 캐릭터는 러닝복 버전(`ch/run-{run|cheer}-{smile|wink|focus|wow}[-sweat].svg`, 원본 `runner.py`)과 강아지(`ch/dog-pant.svg`), 움직임은 `jog`·`pant` 클래스. spec에 `VER = "RUN TIP"`, `BASIS_LABEL = "참고"`(세법 아님), 마무리는 `ending(..., char="run-cheer-wink", sub="구독하고 러닝·절세 팁 받아 가세요!")`. 예시 `specs/r01.py`.
+  - 받은 원고는 그대로 옮기지 않고 사실만 골라 새로 씁니다(다른 사람 영상 문장·이름을 쓰지 않음). 과학 내용은 논문·공신력 있는 출처로 확인하고 틀린 부분은 바로잡습니다(예: R01에서 '개는 목덜미 인대가 없다' → 실제로는 개·말에게 있고 돼지·유인원에게 없음).
+  - 보관: PC `유튜브\쇼츠\러닝\R번호_제목.mp4` + 업로드 문구, 관리표에 번호 'R01'처럼 추가(주차 칸은 '러닝'). 홈페이지는 세무 사이트라 러닝 쇼츠는 올리지 않습니다(기원님이 원하시면 따로).

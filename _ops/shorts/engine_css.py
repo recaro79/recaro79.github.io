@@ -42,6 +42,10 @@ body{width:1080px;height:1920px;overflow:hidden;font-family:"Noto Sans CJK KR",s
 .rt{animation:right .45s ease-out both}
 .st{animation:stamp .45s ease-out both}
 .bob{animation:bob 1.6s ease-in-out infinite}
+@keyframes jog{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-26px) rotate(2deg)}}
+.jog{animation:jog .5s ease-in-out infinite}
+@keyframes pant{0%,100%{transform:scale(1)}50%{transform:scale(1.04,0.97)}}
+.pant{animation:pant .35s ease-in-out infinite;transform-origin:50% 100%}
 .wig{animation:wig 1.2s ease-in-out infinite}
 /* 부품 */
 .title{font-size:112px;font-weight:900;line-height:1.15;letter-spacing:-4px;text-shadow:0 8px 22px rgba(0,0,0,.45)}
