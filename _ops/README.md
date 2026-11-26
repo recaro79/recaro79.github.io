@@ -22,8 +22,14 @@
 - CSS를 바꾸면 모든 페이지의 `/assets/style.css?v=` 값을 새로 올립니다.
 
 ## 디자인 원칙 (2026-11-13 기원님 요청)
-- **남색(파란) 배경을 쓰지 않습니다.** 홈페이지·칼럼·카드뉴스·명함 모두 아이보리/흰색 밝은 배경 + 남색 글씨 + 금색 포인트.
-- 카드뉴스는 `_ops/cardnews/template.html`(밝은 테마 적용됨)을 그대로 복사해 쓰고, 칼럼 본문에 남색 배경 상자(inline style 포함)를 넣지 않습니다.
+- **남색(파란) 배경을 쓰지 않습니다.** 홈페이지·칼럼·명함은 아이보리/흰색 밝은 배경 + 남색 글씨 + 금색 포인트. 칼럼 본문에 남색 배경 상자(inline style 포함)를 넣지 않습니다.
+- **카드뉴스는 2026-11-26부터 새 스타일(v2)** 입니다(기원님: "딱딱하다 → 인스타 카드뉴스처럼 다양하고 재미있게", 시안 승인). 카드뉴스에 한해 남색·진한 색 배경도 씁니다. 이미 올라간 카드뉴스는 그대로 둡니다.
+  - 틀: `_ops/cardnews/template2.html` (publish.py가 기본으로 씀). **예시: `_ops/cardnews/example_v2.py`** — 새 spec의 CARDS는 이 파일을 복사해 문구·색·캐릭터만 바꿉니다.
+  - 전용 캐릭터(안경·남색 정장·금색 넥타이, 점토 느낌): `ch/표정-소품[-sweat].svg` (표정 smile·worry·wow·wink, 소품 none·piggy·calc·doc·wave·thumb·magnify). 원본 `mascot.py`(실행하면 ch/ 다시 생성). 다른 회사·인물 캐릭터나 실제 기업 로고는 넣지 않습니다.
+  - 표지: 왼쪽 위 "2026 Ver.", 오른쪽 위 세무사회 마크 + 세무법인 인성(나눔명조), 캐릭터 + 아래 어두운 그라데이션 위에 굵은 흰 제목, 노란 글씨 "OO series N편".
+  - 7장은 매번 형식을 섞습니다: 표지 / 대화(말풍선) / 숫자 타일 / O·X 퀴즈 / 목록 상자 / 계산식 / 상담 안내(프로필 사진·전화·카카오 QR·@namsemu). 장마다 배경색을 바꾸고, 같은 형식이 두 장 연달아 나오지 않게 합니다.
+  - 글은 짧게: 한 장에 핵심 하나, 큰 숫자·큰 글씨. 2~6장 아래에 근거 법령과 "YYYY.MM.DD 현행 법령 기준"을 작게 적습니다.
+  - 렌더 전에 profile.jpg, qr.png, mark.png, ch/ 가 HTML과 같은 폴더(_ops/cardnews/)에 있어야 합니다.
 - 반원(원형 장식선)도 쓰지 않습니다. 카드뉴스 템플릿·홈 첫 화면·미리보기 이미지·QR 명함에서 모두 뺐습니다.
 - 카톡 미리보기 이미지(og)도 밝은 테마: 홈 `assets/img/og.jpg`, 안내문 `guide/*-og.png` — 원본은 `_ops/og/`(home.html, guide.py, shot.py). 이미지를 바꾸면 og:image 주소 끝 `?v=` 숫자를 올려야 카톡에 새로 반영됩니다.
 
@@ -33,7 +39,7 @@
 3. 칼럼 HTML: 최신 칼럼(`column/` 중 번호가 가장 큰 파일)을 복사해 같은 구조로 작성
    (핵심 3줄 요약 → 카드뉴스 → 질문 인용 → 가상 사례 → 본문 표 → 세액 비교표 → 체크리스트 → 준비 자료 → 상담 안내 → 태그).
    파일명 `column/NN-영문-슬러그.html`, title/description/og/canonical 모두 교체.
-4. 카드뉴스 7장: `_ops/cardnews/template.html`을 복사해 문구만 바꾸고
+4. 카드뉴스 7장: 새 스타일(v2) — `_ops/cardnews/example_v2.py`의 CARDS를 복사해 문구·색·캐릭터를 바꾸고(spec에 넣으면 publish.py가 template2.html로 렌더)
    `python3 _ops/cardnews/render.py <html절대경로> <출력접두어>` → PNG 7장 → JPG(quality 86)로 `assets/cardnews/NN/1~7.jpg`.
    썸네일 `assets/img/colNN-thumb.jpg`(720×720, 1번 카드 상단 정사각 크롭).
    렌더 전에 template 폴더의 profile.jpg, qr.png가 HTML과 같은 폴더에 있어야 합니다.

@@ -40,7 +40,8 @@ mid = f'''<div class="crumb"><a href="/">홈</a> › <a href="/column/">세무 �
 '''
 open(R + '/column/' + fn, 'w', encoding='utf-8').write(head + mid + tail)
 # 카드뉴스
-tpl = open(R + '/_ops/cardnews/template.html', encoding='utf-8').read()
+# 2026-11-26부터 카드뉴스 v2(template2.html, 캐릭터 ch/*.svg) 기본. 옛 양식은 spec에 TEMPLATE = 'template.html'
+tpl = open(R + '/_ops/cardnews/' + S.get('TEMPLATE', 'template2.html'), encoding='utf-8').read()
 style = tpl.split('<body>')[0]
 slides = ''.join(f'<div id="s{i+1}" style="display:block">{c}</div>' for i, c in enumerate(S['CARDS']))
 ch = R + f'/_ops/cardnews/c{NUM}.html'
