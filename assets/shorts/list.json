@@ -1,0 +1,58 @@
+[
+ {
+  "id": "001",
+  "cat": "증여세",
+  "title": "자녀에게 세금 없이 얼마까지 줄 수 있을까?",
+  "basis": "상속세 및 증여세법 제53조·제53조의2",
+  "date": "2026-11-26",
+  "col": "/column/03-gift-deduction-10year-rule.html"
+ },
+ {
+  "id": "002",
+  "cat": "양도소득세",
+  "title": "2년만 갖고 있으면 양도세 0원? 1세대1주택 비과세",
+  "basis": "소득세법 제89조, 시행령 제154조·제160조",
+  "date": "2026-11-26",
+  "col": "/column/01-one-house-exemption.html"
+ },
+ {
+  "id": "003",
+  "cat": "상속세",
+  "title": "상속세, 우리 집도 낼까? 기본 10억 공제",
+  "basis": "상속세 및 증여세법 제19조·제21조",
+  "date": "2026-11-26",
+  "col": "/column/05-inheritance-basic-deductions.html"
+ },
+ {
+  "id": "004",
+  "cat": "증여세",
+  "title": "증여세 신고 언제까지? 안 하면 얼마 더?",
+  "basis": "상속세 및 증여세법 제68조·제69조, 국세기본법 제47조의2",
+  "date": "2026-11-26",
+  "col": "/column/25-gift-tax-deadline-return.html"
+ },
+ {
+  "id": "005",
+  "cat": "양도소득세",
+  "title": "아내에게 증여하고 팔면? 10년 이월과세",
+  "basis": "상속세 및 증여세법 제53조, 소득세법 제97조의2",
+  "date": "2026-11-26",
+  "col": "/column/11-spouse-gift-carryover.html"
+ },
+ {
+  "id": "006",
+  "cat": "증여세",
+  "title": "손주에게 바로 주면 증여세 30% 더?",
+  "basis": "상속세 및 증여세법 제57조",
+  "date": "2026-11-26",
+  "col": "/column/12-generation-skipping-gift.html"
+ },
+ {
+  "id": "007",
+  "cat": "증여세",
+  "title": "부모님이 주신 등록금·생활비, 증여세 낼까?",
+  "basis": "상속세 및 증여세법 제46조, 시행령 제35조",
+  "date": "2026-11-26",
+  "col": "/column/35-tax-free-living-expenses-gift.html"
+ }
+]
