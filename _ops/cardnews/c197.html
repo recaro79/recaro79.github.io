@@ -1,0 +1,143 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+/* 카드뉴스 v2 (2026-11-26 기원님 승인) — 캐릭터 + 장마다 다른 색·형식. 예시: example_v2.py */
+@font-face{font-family:NM;src:url(../fonts/NanumMyeongjo-800.woff2);font-weight:800}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans CJK KR",sans-serif;background:#888;word-break:keep-all}
+.c{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:20px;color:#fff}
+.c.dk{color:#16213e}
+/* 배경 */
+.bg-sunset{background:linear-gradient(160deg,#ff9a62 0%,#d35d7a 38%,#5b2f7a 70%,#1c1238 100%)}
+.bg-night{background:linear-gradient(165deg,#3a4fa0 0%,#22306b 45%,#0e1430 100%)}
+.bg-forest{background:linear-gradient(165deg,#5fb98a 0%,#2c7a62 45%,#0f2e28 100%)}
+.bg-mint{background:linear-gradient(170deg,#c9f5e4 0%,#8fe0c5 100%)}
+.bg-navy{background:linear-gradient(170deg,#1d2f63 0%,#101a3c 100%)}
+.bg-yellow{background:linear-gradient(170deg,#ffe46b 0%,#ffc93a 100%)}
+.bg-pink{background:linear-gradient(165deg,#ff7aa0 0%,#f2557f 55%,#c93a6a 100%)}
+.bg-sky{background:linear-gradient(170deg,#dff0ff 0%,#a9d4ff 100%)}
+.bg-lilac{background:linear-gradient(170deg,#ece4ff 0%,#c7b6ff 100%)}
+.bg-orange{background:linear-gradient(165deg,#ffb15c 0%,#ff7a3d 100%)}
+.bg-cream{background:linear-gradient(170deg,#fff8ea 0%,#f3e6cb 100%)}
+/* 공통 머리·꼬리 */
+.ver{position:absolute;left:60px;top:56px;font-size:34px;font-weight:900;letter-spacing:-.5px;text-shadow:0 3px 10px rgba(0,0,0,.35);z-index:5}
+.brand{position:absolute;right:60px;top:50px;display:flex;align-items:center;gap:12px;font-family:NM,serif;font-size:30px;font-weight:800;z-index:5;text-shadow:0 2px 8px rgba(0,0,0,.3)}
+.brand img{width:48px;height:48px;border-radius:50%;background:#fff;padding:3px}
+.dk .ver,.dk .brand{text-shadow:none}
+.pg{position:absolute;right:60px;bottom:50px;font-size:26px;font-weight:800;opacity:.85;z-index:5}
+.basis{position:absolute;left:60px;bottom:52px;font-size:22px;font-weight:500;opacity:.8;z-index:5}
+.hl{color:#ffd84a}
+.mk{background:linear-gradient(transparent 58%,#ffe066 58%)}
+.abs{position:absolute}
+.ch{position:absolute;display:block}
+.bokeh{position:absolute;border-radius:50%;filter:blur(2px)}
+/* 표지 */
+.cv-glow{position:absolute;left:0;right:0;top:0;height:780px;background:radial-gradient(ellipse at 50% 70%,rgba(255,214,140,.55),transparent 60%)}
+.cv-shade{position:absolute;left:0;right:0;bottom:0;height:640px;background:linear-gradient(to bottom,rgba(20,14,40,0),rgba(20,14,40,.88) 38%,#140e28)}
+.cv-txt{position:absolute;left:66px;right:66px;bottom:170px}
+.cv-txt .kick{font-size:36px;font-weight:800;color:#ffd84a;margin-bottom:18px}
+.cv-txt .t{font-size:96px;font-weight:900;line-height:1.12;letter-spacing:-3px;text-shadow:0 6px 18px rgba(0,0,0,.5)}
+.cv-txt .series{font-size:34px;font-weight:700;color:#ffd84a;margin-top:30px}
+/* 제목 */
+.kick{font-size:36px;font-weight:800}
+.h1{font-size:70px;font-weight:900;letter-spacing:-2px;line-height:1.25}
+.h2{font-size:58px;font-weight:900;letter-spacing:-1.5px;line-height:1.3}
+/* 말풍선 */
+.bub{position:absolute;background:#fff;color:#1d2433;border-radius:44px 44px 44px 8px;padding:42px 46px;box-shadow:0 14px 30px rgba(0,40,60,.18)}
+.bub.r{background:#14254d;color:#fff;border-radius:44px 44px 8px 44px}
+.bub .who{font-size:26px;font-weight:800;color:#7a8794;margin-bottom:10px}
+.bub.r .who{color:#ffd84a}
+.bub .say{font-size:48px;font-weight:900;line-height:1.35;letter-spacing:-1px}
+/* 숫자 타일 */
+.tiles{position:absolute;left:60px;right:60px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.tile{border-radius:34px;padding:34px 36px;background:#fff}
+.tile.wide{grid-column:1 / span 2;display:flex;align-items:center;justify-content:space-between}
+.tile .who{font-size:32px;font-weight:800;color:#2a3142}
+.tile .amt{font-size:86px;font-weight:900;letter-spacing:-3px;line-height:1.1}
+.tile.wide .amt{font-size:110px}
+.tile .amt small{font-size:36px;letter-spacing:0}
+.t-red{background:#ffe3e7}.t-red .amt{color:#ff5c72}
+.t-blue{background:#e2eeff}.t-blue .amt{color:#3d8bff}
+.t-green{background:#dcf7ee}.t-green .amt{color:#18b48a}
+.t-violet{background:#ece4ff}.t-violet .amt{color:#9a6bff}
+.t-orange{background:#fff0dc}.t-orange .amt{color:#ff9f2e}
+/* O·X 퀴즈 */
+.badge{display:inline-block;background:#16213e;color:#ffd84a;font-size:34px;font-weight:900;padding:10px 28px;border-radius:40px}
+.ox{position:absolute;width:330px;height:330px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 36px rgba(120,80,0,.25)}
+.ox.o::after{content:"";width:190px;height:190px;border-radius:50%;border:30px solid #2f7bff}
+.ox.x::before,.ox.x::after{content:"";position:absolute;width:210px;height:32px;border-radius:16px;background:#ef3f3f;transform:rotate(45deg)}
+.ox.x::after{transform:rotate(-45deg)}
+.note{position:absolute;left:60px;right:60px;background:#16213e;color:#fff;border-radius:30px;padding:34px 40px;font-size:36px;font-weight:700;line-height:1.5}
+/* 목록 상자 */
+.rows{position:absolute;left:60px;right:60px;display:flex;flex-direction:column;gap:22px}
+.row{background:#fff;color:#2a1a24;border-radius:30px;padding:30px 36px;display:flex;gap:26px;align-items:center}
+.row .ic{flex:none;width:96px;height:96px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;color:#fff}
+.row .tx{font-size:38px;font-weight:800;line-height:1.35}
+/* 계산식 */
+.eq{position:absolute;left:60px;right:60px;display:flex;align-items:center;justify-content:space-between}
+.eq .bx{background:#fff;border-radius:30px;width:380px;padding:30px;text-align:center;box-shadow:0 10px 24px rgba(20,60,120,.15)}
+.eq .bx small{display:block;font-size:30px;font-weight:800;color:#5a6a80}
+.eq .bx b{display:block;font-size:76px;font-weight:900;letter-spacing:-2px}
+.eq .op{font-size:90px;font-weight:900;color:#16213e}
+.total{position:absolute;left:60px;right:60px;background:#16213e;border-radius:36px;padding:40px;color:#fff}
+.total small{display:block;font-size:34px;font-weight:800;color:#ffd84a}
+.total b{display:block;font-size:110px;font-weight:900;letter-spacing:-4px;line-height:1.05}
+.total span{display:block;font-size:36px;font-weight:800;margin-top:10px}
+.small{font-size:30px;font-weight:700;line-height:1.55}
+/* 마지막 장 */
+.end-box{position:absolute;left:70px;right:70px;background:#fff;color:#16213e;border-radius:36px;padding:40px 46px}
+.end-box .me{display:flex;gap:30px;align-items:center}
+.end-box .me img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid #ffd84a}
+.end-box .me small{display:block;font-size:26px;font-weight:800;color:#a27b3a;letter-spacing:4px}
+.end-box .me b{display:block;font-family:NM,serif;font-size:62px;font-weight:800;letter-spacing:6px}
+.end-box .me span{display:block;font-size:26px;font-weight:700;color:#5a6a80}
+.end-box .ct{margin-top:26px;display:flex;gap:28px;align-items:center;border-top:2px solid #eee3cd;padding-top:26px}
+.end-box .ct img{width:170px;height:170px;border:2px solid #eee3cd;border-radius:12px;padding:6px}
+.end-box .ct .tel{font-size:52px;font-weight:900}
+.end-box .ct p{font-size:26px;font-weight:700;color:#5a6a80;line-height:1.6;margin-top:4px}
+</style></head><body><div id="s1" style="display:block"><div class="c bg-lilac"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="bokeh" style="left:90px;top:200px;width:120px;height:120px;background:#c9b8ff;opacity:.35"></div>
+<div class="bokeh" style="left:860px;top:250px;width:90px;height:90px;background:#ffe3b0;opacity:.35"></div>
+<div class="cv-glow"></div>
+<img class="ch" src="ch/wow-magnify-sweat.svg" style="left:250px;top:150px;width:580px">
+<div class="cv-shade"></div>
+<div class="cv-txt"><div class="kick">서류엔 상가, 실제론 집?</div><div class="t">사람이 살면<br>주택입니다</div><div class="series">양도세 절세 series 11편</div></div>
+<div class="pg">1 / 7</div></div></div><div id="s2" style="display:block"><div class="c dk bg-mint"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="abs kick" style="left:60px;top:150px;font-size:40px;font-weight:900;color:#0f5a4c">집 파실 분들이 묻는 질문</div>
+<div class="bub" style="left:60px;top:240px;width:820px"><div class="who">최○○ 님</div><div class="say">근생빌라는<br>서류상 <span class="mk">상가</span>니까<br>저는 1주택이죠?</div></div>
+<div class="bub r" style="right:60px;top:690px;width:660px"><div class="who">남기원 세무사</div><div class="say" style="font-size:44px">세입자가 살면<br><span class="hl">주택</span>으로 봐서<br>2주택이에요!</div></div>
+<img class="ch" src="ch/worry-doc.svg" style="left:10px;top:700px;width:380px">
+<div class="abs" style="right:60px;top:1140px;font-size:36px;font-weight:900;color:#0f5a4c">기준은? →</div>
+<div class="pg">2 / 7</div></div></div><div id="s3" style="display:block"><div class="c bg-navy"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="abs" style="left:60px;right:60px;top:150px"><div class="kick hl" style="font-size:36px">이 구조 + 실제 주거 사용</div><div class="h1" style="margin-top:8px">= 양도세상 주택</div></div>
+<div class="rows" style="top:400px">
+ <div class="row"><div class="ic" style="background:#2fa36b">①</div><div class="tx">세대마다<br><span style="color:#1f8a57">별도 출입문</span></div></div>
+ <div class="row"><div class="ic" style="background:#3d8bff">②</div><div class="tx">세대마다<br><span style="color:#1b5fa8">화장실</span></div></div>
+ <div class="row"><div class="ic" style="background:#e0463c">③</div><div class="tx">세대마다<br><span style="color:#c0392b">취사시설</span></div></div>
+</div>
+<div class="basis">소득세법 제88조7호·시행령 제152조의4 · 2026.11.27 현행 법령 기준</div><div class="pg">3 / 7</div></div></div><div id="s4" style="display:block"><div class="c dk bg-yellow"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="abs" style="left:60px;top:150px"><span class="badge">O X 퀴즈</span></div>
+<div class="abs" style="left:60px;right:60px;top:240px;font-size:62px;font-weight:900;line-height:1.3;letter-spacing:-2px">허가 없이 지은<br>시골집은 주택 수에<br><span style="background:linear-gradient(transparent 60%,#fff 60%)">들어가지 않는다?</span></div>
+<div class="ox x" style="left:60px;top:600px"></div>
+<img class="ch" src="ch/wink-thumb.svg" style="left:470px;top:580px;width:480px">
+<div class="note" style="top:1000px">정답은 <b class="hl" style="font-weight:900">X</b>! 허가 여부와 관계없이<br>사람이 살면 <b style="font-weight:900">주택</b>이 될 수 있어요.</div>
+<div class="basis">소득세법 제88조제7호 · 2026.11.27 현행 법령 기준</div><div class="pg">4 / 7</div></div></div><div id="s5" style="display:block"><div class="c dk bg-sky"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="abs" style="left:60px;right:60px;top:150px"><div class="kick" style="color:#1b5fa8">아파트 9억 원 양도 · 10년 (가상 사례)</div><div class="h1" style="font-size:62px;margin-top:6px">근생빌라 한 칸 차이</div></div>
+<div class="eq" style="top:360px"><div class="bx"><small>1주택이면</small><b style="color:#2fa36b">0원</b></div><div class="op">vs</div><div class="bx"><small>2주택이면</small><b style="color:#ff5c8a">1.33억</b></div></div>
+<div class="total" style="top:610px"><small>지방소득세 포함 시</small><b>약 1억 4,637만</b><span>양도차익 5억 원, 장기보유 공제 20%</span></div>
+<img class="ch" src="ch/worry-calc-sweat.svg" style="right:20px;top:880px;width:330px">
+<div class="abs small" style="left:60px;width:640px;top:950px;color:#16213e"><b style="color:#e0463c">가정</b><br>· 조정대상지역 아님(중과 없음)<br>· 다른 비과세 특례 없음</div>
+<div class="basis">소득세법 제55조①·제95조② · 2026.11.27 현행 법령 기준</div><div class="pg">5 / 7</div></div></div><div id="s6" style="display:block"><div class="c bg-forest"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="abs" style="left:60px;right:60px;top:150px"><div class="kick hl" style="font-size:34px">집 팔기 전에</div><div class="h1" style="margin-top:8px">이런 곳 확인!</div></div>
+<div class="rows" style="top:390px">
+ <div class="row"><div class="ic" style="background:#e0463c">①</div><div class="tx">세입자 사는<br><span style="color:#c0392b">근린생활시설</span></div></div>
+ <div class="row"><div class="ic" style="background:#f39c12">②</div><div class="tx">시골의<br><span style="color:#b9770e">무허가·미등기 집</span></div></div>
+ <div class="row"><div class="ic" style="background:#3d8bff">③</div><div class="tx">주거용으로 쓰는<br><span style="color:#1b5fa8">오피스텔</span></div></div>
+</div>
+<div class="basis">소득세법 제88조제7호 · 2026.11.27 현행 법령 기준</div><div class="pg">6 / 7</div></div></div><div id="s7" style="display:block"><div class="c bg-navy"><div class="ver">2026 Ver.</div><div class="brand"><img src="mark.png">세무법인 인성</div>
+<div class="bokeh" style="left:930px;top:560px;width:110px;height:110px;background:#5c7dd6;opacity:.35"></div>
+<div class="abs" style="left:0;right:0;top:130px;text-align:center"><div class="kick hl" style="font-size:40px">집 파시기 전에</div><div style="font-size:84px;font-weight:900;letter-spacing:-3px;line-height:1.2"><span class="hl">주택 수</span> 점검!</div></div>
+<img class="ch" src="ch/smile-wave.svg" style="left:360px;top:320px;width:360px">
+<div class="end-box" style="top:740px">
+ <div class="me"><img src="profile.jpg"><div><small>지점대표세무사</small><b>남기원</b><span>세무법인 인성 · 세무 경력 20년</span></div></div>
+ <div class="ct"><img src="qr.png"><div><div class="tel">010-7741-4822</div><p>카카오톡 상담: QR을 찍어 주세요<br>평일 09:00~18:00 · recaro79.github.io<br>인스타그램·Threads @namsemu</p></div></div>
+</div>
+<div class="basis">2026.11.27 현행 법령 기준</div><div class="pg">7 / 7</div></div></div></body></html>
